@@ -1,0 +1,13 @@
+.panel-idash-inside{}
+#panel-idash-topleft{float:left;width:65%}
+#panel-idash-topright{float:left; width:34%}
+.panel-idash-inside{}
+#panel-idash-left-wrapper{position: absolute;width:190px;}
+#panel-idash-main-wrapper{position: relative;margin-left: 200px;}
+#panel-idash-top-wrapper{float:left;width:99%;clear:both;}
+#panel-idash-central{float:left;width:45%;padding:10px 0 10px 10px;}
+#panel-idash-central-top{}
+#panel-idash-central-middle{}
+#panel-idash-central-bot{}
+#panel-idash-right-wrapper{float:left;width:48.5%;padding:10px 0 10px 30px;}
+.panel-region-separator{height:10px;}

@@ -1,0 +1,10 @@
+/* tabs theming */
+#tabs-wrapper{width:100%;margin:4px 10px 10px 0px}
+.drupal-tabs{float:none;margin: 10px;min-height: 40px;}
+#tabs-wrapper ul.tabs,.drupal-tabs ul.ui-tabs-nav{border-top: 1px solid #B5B9D7;border-left: 1px solid #B5B9D7;border-right: 1px solid #B5B9D7;background: url(/images/sprite_skin.png) 0 -255px repeat-x #D8E1CE /*#D8E1CE*/;height: 24px;border-bottom: none;white-space:nowrap;z-index: 1;margin: 5px 0px 0px 4px;padding: 4px 6px 2px;}
+#tabs-wrapper ul.tabs{float: right;margin-top: -70px;min-width: 130px;margin-right:-10px;}
+.drupal-tabs ul.ui-tabs-nav li{position: relative;z-index: 2;float: left;clear: right;display: inline;margin: 0px;padding: 0px 0px 2px;}
+#tabs-wrapper ul.tabs li a,.drupal-tabs ul.ui-tabs-nav li a{padding:4px 13px 0px 13px;border: none;color: #fbfbfb;border: none;outline: none;font-size: .95em;display: block;margin-left: 0px;border-right: 1px solid #ccc;margin-right: -2px;background: transparent;z-index:3;float: left;clear: right;}
+.drupal-tabs ul.ui-tabs-nav li.ui-tabs-selected a{padding-bottom: 0px;}
+.drupal-tabs ul.ui-tabs-nav li.ui-tabs-selected a{border-top: 1px solid #C4C5EE;border-left: 1px solid #C4C5EE;border-right: 1px solid #C4C5EE;border-bottom: none;background: #fff;z-index:6;font-weight: bold;margin-top: -9px;margin-bottom: -10px;padding-top: 12px;padding-bottom: 8px;cursor: text;font-size: 1em;color:#444;display: block;float: left;}
+.drupal-tabs .ui-tabs-panel {background: #fff;width: auto;z-index:1;min-height: 40px;margin: 0px 0px 0px 4px;border: 1px solid #BAC5B4;padding:10px 10px 20px;}

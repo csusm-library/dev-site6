@@ -1,0 +1,42 @@
+.wideright2-cmid-left{width:57%;margin:15px;}
+h3.collapsiblock{background:#dfdfdf;padding:10px;margin:10px 0 0}
+#container .collapsiblock a{color:#0A6F87!important}
+.panel-wideright2-left .block.collapsiblock-processed .content{background:#f6f6f6;padding:10px;margin:0}
+.wideright2-cmid-left .panel-pane22{
+padding: 0 10px;
+border: 1px solid #ddd;
+-moz-box-shadow: 0 0 9px #ddd;
+-webkit-box-shadow: 0 0 9px #ddd;
+box-shadow: 0 0 9px #ddd;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;float: left;height: 200px;clear: right;}
+#temecula-chat{background:#f6f6f6;padding:10px;overflow:hidden;clear: right;}
+#temecula-chat h2{display:none}
+.wideright2-cmid-right {float:right;width:36.5%;margin:0 -33px 0 20px;}
+#temecula-chat #chatFrame{height:400px;width:310px}
+#page-content-main-inner .item-list .pager{height:30px!important;width:auto;float:none}
+#page-content-main-inner .item-list .pager li{float:left}
+.pager li.pager-current{font-size:12px;background: url("/sites/biblio.csusm.edu/themes/rubik/images/bleeds.png") repeat-x scroll 0 0 #888888;border-color: #999999;box-shadow: 0 1px 0 #FFFFFF;color: #FFFFFF;}
+.view-id-Library_Hours_Calendar h3{margin:0;padding:0}
+span.date-display-single {font-size:95%;margin:8px 0 0;display:block;color:#555}
+.panel-wideright2-left-wrapper{background:#f6f6f6;margin:20px 0 0 -20px;padding:20px 15px}
+.pane-library-hours-calendar h2{background:#dfdfdf;margin: 0 0 15px -15px;padding:15px}
+.inline-db-cats{list-style:none;margin:10px 0;padding:0}
+.inline-db-cats li{list-style:none;float:left;padding:0;margin:0 10px 0}
+.pane-database-guides-lists{margin:15px -10px 15px 5px;padding:10px;background:#efeff1}
+.pane-database-guides-lists h2{display:none;margin:0;padding:0}
+#db-az-browse{margin:-10px 0 0 17px}
+#specific-article-link{float:left;margin:-16px 0 0 285px}
+.more-link{text-align: left}
+
+/* Discovery search */
+#block-block-4{background:#fff;padding:0;margin:42px 9px 0 25px;border: 1px solid #ccc;width:360px;clear:both;position:relative;box-shadow:0 0 9px #ccc;-moz-box-shadow:0 0 9px #ccc;-webkit-box-shadow:0 0 9px #ccc;border-radius: 5px 5px 0 0;-moz-border-radius:5px 5px 0 0;-webkit-border-radius:5px 5px 0 0;}
+#block-block-4 h3{margin: 0px;padding: 7px 10px 3px 32px;background: url(http://biblio.csusm.edu/images/bg.gif) repeat-x 0 98% #fff;font-size: 1.1em;border-bottom: 1px solid #DDD;border-radius: 5px 5px 0 0;-moz-border-radius: 5px 5px 0 0;-webkit-border-radius: 5px 5px 0 0;color:#686868}
+#block-block-4 .content{margin:0;padding:2px}
+#discov-new-sign{background:#F74;display:block!important;position:absolute;top:3px;left:-18px;padding:2px 6px;box-shadow:0 3px 7px #bbb;-moz-box-shadow:0 3px 7px #bbb;-webkit-box-shadow:0 3px 7px #bbb;color:#fff;border:1px solid #ccc}
+#discov-faq-link{display:block!important;position:absolute;top:5px;right:4px;background:#fff;padding:2px 7px;border-radius:3px 3px 3px 3px;-moz-border-radius:3px 3px 3px 3px;-webkit-border-radius:3px 3px 3px 3px;border:1px solid #ddd}
+#discov-faq-link a{text-decoration:none;font-size:12px}
+#block-block-4 .content form .form-line-item {padding: 4px 8px 3px;margin: 0;white-space: nowrap;overflow:hidden;border:none}
+#block-block-4 .content label{display:none}
+#block-block-4 input#summons-query{width:200px;background:#fff}

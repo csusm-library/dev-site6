@@ -1,0 +1,13 @@
+.panel-media { /*  overflow: hidden;  */}
+.panel-media-inside{}
+.panel-media-top-wrapper{float:left;width:99%;}
+.panel-media-left-wrapper{float:left;width:19%;}
+.panel-media-central{float:left;width:79%}
+.panel-media-central-left{float:left;width:69%}
+.panel-media-central-top{}
+.panel-media-central-middle{}
+.panel-media-central-mid2{clear:both;}
+.media-cmid-left{float:left;width:65%;margin:10px 0;}
+.media-cmid-right{float:left;width:34%;margin:10px;}
+.panel-media-central-bot{}
+.panel-media-right{float:left;width:30%;}

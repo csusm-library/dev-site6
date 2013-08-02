@@ -1,0 +1,13 @@
+.panel-wideright2 { /*  overflow: hidden;  */}
+.panel-wideright2-inside{}
+.panel-wideright2-top-wrapper{float:left;width:99%;}
+.panel-wideright2-left-wrapper{float:left;width:19%;}
+.panel-wideright2-central{float:left;width:79%}
+.panel-wideright2-central-left{float:left;width:69%}
+.panel-wideright2-central-top{}
+.panel-wideright2-central-middle{}
+.panel-wideright2-central-mid2{clear:both;}
+.wideright2-cmid-left{float:left;width:65%;margin:10px 0;}
+.wideright2-cmid-right{float:left;width:34%;margin:10px;}
+.panel-wideright2-central-bot{}
+.panel-wideright2-right{float:left;width:30%;}

@@ -1,0 +1,216 @@
+/** WEBFORMS */
+
+
+/* Global */
+.webform-client-form fieldset.webform-component-fieldset.collapsible,
+.webform-client-form fieldset.webform-component-fieldset {
+border: none;
+padding: 0px;
+margin: 15px 0px 10px 0px;}
+
+.webform-client-form fieldset.webform-component-fieldset.collapsed{
+border: none;
+padding: 0px;
+background-image: none;}
+
+.webform-client-form fieldset.webform-component-fieldset .fieldset-wrapper{
+width: 616px;
+border-left: 1px solid #E4E3D3;
+border-right: 1px solid #E4E3D3;
+border-bottom: 1px solid #E4E3D3;
+background: url(/sites/all/images/form-fieldset-bg-2.png) 50% 100% repeat-x transparent;
+padding: 5px 15px 10px 15px;}
+	
+.webform-client-form fieldset.webform-component-fieldset fieldset {
+background-image: none;
+border: 1px dotted #ccc;
+width: auto;
+min-width:150px;}
+
+.webform-client-form fieldset.webform-component-fieldset legend,
+.webform-client-form fieldset.webform-component-fieldset.collapsible legend {
+	width: auto;
+	margin: 0px;
+	border: none;
+	background: url(/images/bg.gif) 0 98% repeat-x #f3f3f3;
+	padding: 0px;}
+	
+.webform-client-form fieldset.webform-component-fieldset legend a,
+.webform-client-form fieldset.webform-component-fieldset.collapsible legend a{
+	width:604px;
+	padding: 6px 18px 4px 24px;
+	font-weight: normal;
+	text-decoration:none;
+	display: block;
+	border: 1px solid #ccc;}
+
+.webform-client-form .form-item .description {
+float: left;
+padding-left: 5px;}
+
+.webform-client-form .form-item .description p{
+margin: 0px;
+padding: 0px;}
+
+.webform-component-fieldset div.form-item{
+width: auto;
+float: none;
+display: block;
+margin:3px 0px;
+padding:0px;}
+
+
+/* Labels */
+.webform-client-form label{
+text-align: left;
+margin-top:10px;
+*position: relative;
+display: block;
+width: 100%;
+float: none;}
+
+.webform-client-form .webform-component-email,
+.webform-client-form .webform-component-textfield,
+.webform-client-form .webform-component-textarea,
+.webform-client-form .webform-component-select,
+.webform-client-form .webform-component-time,
+.webform-client-form .webform-component-date{
+float: left;
+position: relative;
+margin: 5px 0px;
+clear: both;
+width: 100%;}
+
+.webform-component-select .form-item .form-checkboxes .form-item label,
+.webform-component-select .form-item .form-radios .form-item label{
+padding-right:20px;}
+
+
+/* Input fields */
+.webform-client-form textarea,
+.webform-client-form select,
+.webform-client-form input.form-text{
+padding: 2px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1.1em;
+border-top:1px solid #7c7c7c;
+border-left:1px solid #c3c3c3;
+border-right:1px solid #c3c3c3;
+border-bottom:1px solid #ddd;
+background:#fff url(/images/backgrounds/fieldbg.gif) repeat-x top;
+  -moz-border-radius: 4px;
+  -moz-outline-radius: 4px;
+  -webkit-border-radius: 4px;}
+
+.webform-client-form select,
+.webform-client-form input.form-text{
+float: left;
+margin-right: 5px;}
+
+
+/* Checkboxes, radio buttons, drop-down selections */
+.webform-client-form label.option{
+margin: 0px;
+display: inline;
+width: auto;}
+
+.webform-component-select .form-item .form-checkboxes,
+.webform-component-select .form-item .form-radios{
+display:inline;}
+
+.webform-component-select .form-item .form-checkboxes .form-item,
+.webform-component-select .form-item .form-radios .form-item{
+float: left;
+padding:3px 6px;
+line-height:1.25em;
+padding-right:20px;
+height:36px;
+min-width:150px;}
+
+
+/* Radio buttons */
+.webform-component-select .form-item .form-radios .form-item{
+width: auto;
+min-width:50px;}
+
+/* Selection drop-downs */
+.webform-client-form select{
+margin: 0px 10px 0px 0px;}
+
+
+/* Textareas */
+.webform-component-textarea div.form-item label {
+float: none;
+text-align:left;
+width: auto; /* Adjust for the width of your labels */}
+
+.webform-component-textarea div.form-item textarea {
+max-width:600px;
+height:60px;}
+
+
+/*  Dates and Times */
+
+.webform-client-form .webform-component-time .form-item .form-item,
+.webform-client-form .webform-component-date .form-item .form-item{
+display: inline;
+float: left;}
+
+.webform-client-form .webform-component-time .form-item .form-item label,
+.webform-client-form .webform-component-date .form-item .form-item label,
+.webform-client-form .form-checkboxes .form-item .form-item label,
+.webform-client-form .form-radios .form-item .form-item label{
+width: auto;}
+
+
+/* Exceptions */
+/* Media Faculty Reserve Form */
+.webform #webform-client-form-1562 .webform-component-select .form-item .form-radios .form-item{
+width: auto; 
+float: none;
+padding-left: 0px;}
+.webform #webform-client-form-1562 .webform-component-select .form-item .form-radios .form-item label{
+padding-left: 0px;}
+.webform #webform-client-form-1562 .webform-component-select .form-item .form-radios{
+margin:6px 0px 12px 0px;}
+.webform #webform-client-form-1562 .webform-component-select .form-item label{
+margin-bottom:8px;}
+.webform #webform-client-form-1562 #webform-component-when_needed textarea{
+width:550px;
+height:90px;
+clear: both;}
+.webform #webform-client-form-1562 #webform-component-when_needed textarea:after{
+clear: both;}
+
+
+/* CAPTCHA Elements */
+fieldset.captcha{
+padding: 0px;
+margin-left: 10px;
+border: none;
+width: auto;}
+	
+fieldset.captcha legend{
+margin: 0px;
+padding: 20px 0px 12px 0px;}
+
+fieldset.captcha .description{
+padding: 0px;
+margin: 0px;}
+
+.webform-client-form textarea.error,
+.webform-client-form select.error,
+.webform-client-form input.form-text.error{
+font-weight:bold;
+color:#CC0000;
+border: 2px solid #F00;
+font-size: 1em;}
+
+.form-item .field-prefix{float:left;}
+.webform-component-radios,.form-actions{clear: both;float: left;margin: 5px 0;position: relative;width: 100%;}
+.webform-client-form{margin: 0 0 25px;}
+.webform-client-form #edit-actions{float:none;}
+.form-item .form-radios{padding:10px; border: 1px solid #ccc;width:400px;}
+.webform-client-form #edit-captcha-response-wrapper.form-item .description {float:none;clear:both;}
+#edit-captcha-response-wrapper{border: 1px solid #ccc;padding:20px;margin:10px 10px 20px;width:450px;border-radius:5px;-moz-border-radius:5px;}
+#webform-component-library-use-only{display:none;}

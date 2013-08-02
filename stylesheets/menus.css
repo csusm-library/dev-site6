@@ -1,0 +1,88 @@
+#block-nice_menus-7{z-index:1500;position:absolute;margin-left:30px;}
+#nice-menu-7, #nice-menu-7 ul{list-style:none;padding:0;z-index:1;margin:0;position:relative;display:block;}
+#nice-menu-7{float:left;margin:0 0 0 195px;border:none;line-height:normal;z-index:10;min-width:780px;}
+#nice-menu-7 ul{position:absolute; visibility:hidden;background:#fff;border:none;z-index:1000;top:-999px;border-left:1px solid #ccc;border-right:1px solid #ccc;border-bottom:1px solid #ccc;border-radius: 0 0 3px 3px;margin:0;padding:15px 0 15px;width:380px;box-shadow: 0 7px 7px #444;-webkit-box-shadow: 0 7px 7px #444;-moz-box-shadow: 0 7px 7px #444;}
+#nice-menu-7 li{float:left;background-color:transparent;z-index:1;display:block;min-height:51px;margin:10px 0 0;max-width:180px;padding:0;position:relative;border:none}
+#nice-menu-7 li:hover ul, .menuparent li:hover ul, #nice-menu-7 .over ul{visibility:visible;top:58px;}
+#nice-menu-7 a, #nice-menu-7 a:link, #nice-menu-7 a:visited, #nice-menu-7 a:hover{outline:0;border-right:1px solid #797979;width:auto;font-size:1.05em;margin:0 0 4px;background-color:transparent;display:block;text-decoration:none;padding: 10px 20px 4px;background-position:92% 50%;max-width:160px;color:#fff;font-weight:bold;border:none;border-right:1px solid #666;height:40px;}
+#nice-menu-7 li em{color:#fff;display:block;padding:5px 0 3px;font-weight:normal;font-size:.95em;}
+#nice-menu-7 li:hover{color:#333;height:auto;border-radius: 3px 3px 0 0;visibility:inherit; /* fixes IE7 'sticky bug' */}
+#nice-menu-7 li:hover li{background:#fff;}
+#nice-menu-7 li:hover a{background:#fff;color:#035;padding:10px 20px 8px 19px;border-left:1px solid #ccc;border-right:1px solid #ccc;border-top:1px solid #ccc;margin-bottom:0;box-shadow:0 -5px 6px #999;border-radius: 3px 3px 0 0;}
+#nice-menu-7 li:hover em{color:#333;}
+#nice-menu-7 ul li{border:none;margin:4px 10px 15px 10px;float:none;display:block;padding:0px;height:auto;}
+#nice-menu-7 ul li, #nice-menu-7 ul li:hover, #nice-menu-7 ul .menu_closer:hover{float:right;}
+#nice-menu-7 .first-submenu-set, #nice-menu-7 .first-submenu-set:hover, #nice-menu-7 .second-submenu-set, #nice-menu-7 li.second-submenu-set:hover{float:left;width:170px;}
+#nice-menu-7 ul a, #nice-menu-7 ul a:link, #nice-menu-7 ul a:visited, #nice-menu-7 ul a:hover{z-index:1000;font-size:.95em;border-right:none;padding:6px 9px 2px 2px;max-width:180px;color:#069;background:#fff;font-weight:normal;border-bottom:1px solid #ccc;display:block;margin-bottom:9px;box-shadow:none;border-radius:0;border-left:none;border-top:none;height:auto}
+#nice-menu-7 a:hover {box-shadow:none !important;-moz-box-shadow:none !important;-webit-box-shadow:none !important;}
+
+#nice-menu-7 .menu-path-logout a:hover{border-left:1px solid #f4f4f4;padding:3px 19px 3px 12px;border-right:none;}
+#about-the-library{position:absolute;margin:10px 0 0 239px;}
+#about-the-library a{color:#fff;display:block;padding:2px;}
+#your-tools-menu ul{right:0px;}
+#about-us-menu{border-right:none;}
+#about-us-menu ul{right:0px;}
+#user-menu-top{margin:0 ;width:100%;position: absolute;}
+#user-menu-top ul{margin:0 0 0 240px; padding: 0;height: 25px;}
+#user-menu-top li{list-style: none; float: left;margin: 0;padding:0px 4px;}
+#user-menu-top li span{}
+#user-menu-top li a{display: block;margin: 0;padding:7px 13px 3px;color:#fff;background: #3680C9;float:left;-moz-border-radius:4px;border-radius:4px;border:1px solid #888;text-decoration:none;}
+#user-menu-top #user-name {padding:8px 12px 3px 10px; font-weight: bold;}
+#user-menu-top #user-name a{background: transparent;color:#069;border:none;float: none;display:inline;padding:0;}
+#user-menu-top #edit-profile a{background:url(/images/user/edit_profile.png) no-repeat 97% 2px #3680C9;padding-right:34px}
+#user-menu-top #logout a{background:url(/images/user/shut_down.png) no-repeat 97% 2px #3680C9;padding-right:34px}
+#block-user-0{position:absolute;top:75px;margin-left:335px;z-index:1000;background:#fff;border: 1px solid #ccc;padding: 5px 15px 3px;-moz-border-radius:4px;border-radius:4px;color:#666;}
+#toboggan-login{display:none;padding:15px 15px 20px;}
+#toboggan-login-link-container a{font-weight:bold;}
+#block-user-0 #user-login-form {padding: 0;height:auto;background-image: none;}
+#block-user-0 #user-login-form a{text-decoration:none;}
+
+ul.jquerymenu li{margin-left:30px;}
+	
+#appbar_container {bottom: 0;display: none;height: 30px;padding: 0;position: fixed;right: 0;width: 100%;z-index: 99;display:block;}
+.front #appbar_container {right: 5px;}
+#appbar_sub {display: block;overflow: visible !important;position: relative;margin: 0 auto;max-width:1200px;min-width:910px;box-shadow: 1px -2px 10px #666666;-moz-box-shadow: 1px -2px 10px #666666;-webkit-box-shadow: 1px -2px 10px #666666;}
+#appbar {background-color: #3F3F3F;color: #959B9F;border: none;display: block;height: 30px;padding: 0;right: 0;}
+#appbar #standalone-links{display:inline;}
+#appbar #standalone-links a:link,#appbar #standalone-links a:visited{color:#fff;}
+#appbar .appbar-item{float:left;padding:3px 10px;color:#fff;}
+#appbar .appbar-divider{float:left;padding:3px 10px;}
+#appbar .block {border-right: 1px #B5B5B5 solid;float: left;height: 25px;padding: 0 4px;}
+#appbar .block.last {border-right: 0 none;}
+#appbar .block h3 {padding: 2px 10px;margin: 0;
+cursor: pointer;color: #fff;font-weight: normal;font-size: 1em;line-height: 25px;}
+#appbar .block .content {background-color: #FFFFFF;border: 1px #B5B5B5 solid;bottom: 25px;display: none;margin-bottom: 0;max-height: 450px;min-height: 25px;overflow-x: hidden;overflow-y: auto;position: fixed;width: 200px;z-index: 51;}
+.appbar-block-controls {background-color: #E5E5E5;border-bottom: 1px #B5B5B5 solid;height: 20px;line-height: 20px;}
+.appbar-minimize {cursor: pointer;float: right;font-size: 20px;padding: 0 4px;}
+#appbar .block .content p {border: 0 none;display: inline;margin: 0;padding: 0;}
+#appbar .block .content ul.menu,
+#appbar .block .content .item-list ul {border: 0 none;display: block;margin: 0;padding: 10px;}
+
+#appbar .block .content ul li,
+#appbar .block .content ul.menu li,
+#appbar .block .content .item-list ul li,
+#appbar .block .content ul.menu li.last,
+#appbar .block .content li.leaf{background: transparent none;border: 0 none;list-style: none;display: block;float: none;margin: 0;padding: 0 4px;}
+
+#appbar .block .content ul.menu li,
+#appbar .block .content ul.menu li.last{  border: none;padding: 6px;}
+#appbar .block .content ul.menu li a{font-size: 1.1em;}
+#appbar .block .content .minimize{float:right;text-align:right;font-size:1.1em;padding:5px 5px 10px;cursor:pointer;z-index:100;color: #C30}
+#appbar .block .content .expand{float:right;text-align:right;font-size:1.1em;padding:5px 5px 10px;cursor:pointer;z-index:100;color: #06C;font-weight:bold;}
+
+/*User login*/
+#appbar #block-user-0 .content{height:190px;width:180px;}
+#user-login-form {text-align:left;border:none;width:auto;height:140px;margin:0;padding:10px 20px 20px;}
+#user-login #edit-submit, #user-login-form #edit-submit {margin-left:0;}
+#user-login label, #user-login-form label {float:none;width:auto;}
+#library-header #user-login-form label {float:left;width:95px;}
+
+/*Live Chat block */
+#appbar #block-block-3{float: right;margin-right:30%;}
+#appbar #block-block-3 h2{background:url(/images/icons/chat.png) no-repeat 5px 0;padding: 2px 0 16px 45px; color: #00637B;margin:0 0 10px;float:left;font-weight:bold;padding: 0 0 0 10px;cursor:pointer}
+#appbar #block-block-3 h3 {background:url(/images/icons/chat.png) no-repeat 100% 1px;padding-right:37px}
+#appbar #block-block-3 .content{margin-bottom: -390px;width:290px;background: #f9f9f9;padding: 10px 0; overflow:hidden;display:block;margin-left:-180px;-moz-box-shadow:4px 0 4px 0 #888;box-shadow: 5px -5px 9px #666;-moz-box-shadow: 5px -5px 9px #666;-webit-box-shadow:2px -2px 8px #aaa;}
+#appbar #block-block-3 .content iframe{width:400px;height: 340px}
+
+/*Collapsible blocks*/
+div .collapsiblock a {color:#fff!important;outline:none !important;}

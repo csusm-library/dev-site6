@@ -1,0 +1,17 @@
+/* $Id: twocol.css,v 1.1.2.1 2008/12/16 21:27:58 merlinofchaos Exp $ */
+
+.panel-top{width: 100%;}
+.panel-col-right{	float:left;width:100%}
+.panel-dbmain .panel-col-right .panel-col-right-inside .inside{
+float:left;padding: 0 20px 20px 0;margin: 0 10px 0 0;width: 98%}
+* html .panel-dbmain .panel-col-right {}
+.panel-dbmain .panel-col-right-inside {
+margin-left:220px;}
+.panel-dbmain .panel-col-left {
+float:left;margin-left:-100%;}
+* html .panel-dbmain .panel-col-left {}
+.panel-dbmain .panel-col-left .inside { 
+width:220px;float:left;}
+#panels-edit-display .panel-pane,
+#panels-edit-display .helperclass {}
+.panel-dbmain .panel-separator {}

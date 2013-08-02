@@ -1,0 +1,29 @@
+; $Id: framework.info,v 1.2 2009/03/17 05:04:14 andregriffin Exp $
+
+name = CSUSM Library
+description = Theme for our website.
+version = VERSION
+core = 6.x
+engine = phptemplate
+stylesheets[all][] = stylesheets/dashboard.css
+stylesheets[all][] = stylesheets/forms.css
+stylesheets[all][] = stylesheets/webforms.css
+stylesheets[all][] = stylesheets/menus.css
+stylesheets[all][] = stylesheets/tabs.css
+stylesheets[all][] = stylesheets/db_layouts.css
+stylesheets[all][] = stylesheets/ctools_backup.css
+stylesheets[all][] = stylesheets/calendar.css
+stylesheets[print][] = stylesheets/print.css
+scripts[] = scripts/research.js
+regions[left] = Left sidebar
+regions[right] = Right sidebar
+regions[featured] = Content
+regions[content] = Content
+regions[content_bottom] = Content
+regions[header] = Header
+regions[upperright] = Upper Right
+regions[nav] = Navigation
+regions[footer] = Footer
+regions[menubar] = Menubar
+; Panels layouts. You can place multiple layouts under the "layouts" folder.
+plugins[panels][layouts] = layouts

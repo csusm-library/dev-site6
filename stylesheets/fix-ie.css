@@ -1,0 +1,144 @@
+#container,
+#page-content-main{
+	position: inherit;}
+	
+#block-menu-525 ul{
+margin-top:-57px;}
+
+#block-menu-525 li a,
+#block-menu-525 li a:link,
+#block-menu-525 li a:visited,
+#block-menu-525 li a:hover,
+#block-menu-525 li a:active{
+padding:9px 17px 5px 17px;}
+
+.webform-client-form fieldset.webform-component-fieldset{
+background: url(/sites/all/images/form-fieldset-bg-2.png) 50% 0% repeat-x transparent;}
+
+#tabs-wrapper ul.tabs {
+border: none;
+float:left;
+margin: 10px 10px -10px 0px;
+padding:0px;}
+
+#tabs-wrapper ul.tabs li{
+margin-bottom:-10px;
+padding-bottom:0px;}
+
+#tabs-wrapper ul.tabs li a {
+display: block;
+float:left;
+padding: 6px 10px 3px 10px;}
+
+#tabs-wrapper {
+width:100%;
+float:left;
+min-height:66px;
+clear:both;
+padding-bottom:0px;
+border-bottom: 1px solid #aaa;
+margin:4px 10px 10px 0px}
+  
+ul.inline li {
+margin: 0px 0px 0px 15px;
+padding: 0px 15px 0px 0px;}
+
+#tabs-wrapper .primary li.active {
+margin-bottom:-8px;}
+
+#tabs-fieldgroup_tabs ul li a {
+border-top:1px solid #ccc;
+border-right:1px solid #ccc;
+border-left:1px solid #ccc;
+margin: 5px 6px 0px 6px;
+padding: 5px 12px 1px 12px;
+background: #fff;
+min-width: 75px;
+z-index:1;
+display: block;
+top: 5px;
+outline: 0; /* prevent dotted border in Firefox */}
+
+#tabs-fieldgroup_tabs ul li.tabs-selected a {
+position: relative;
+background: #FFF9E1;
+top: 4px;
+margin-bottom: -5px;
+margin-top:0px;
+z-index: 3;
+padding:9px 12px 5px 12px;
+color: #000;}
+
+#calendar-date-select-form input.form-text{
+margin-right:46px;}
+
+.panel-flexible .inside div.panel-pane .captcha{
+float: none;
+position: relative;
+clear:none;}
+
+html > body fieldset.collapsible legend a,
+fieldset.collapsible legend a{
+text-decoration: none;}
+
+fieldset.collapsed legend,
+fieldset.collapsible{
+margin-bottom:50px;}
+
+
+
+/* Webforms */
+.webform-client-form fieldset.webform-component-fieldset.collapsible,
+.webform-client-form fieldset.webform-component-fieldset {
+border: none;
+padding: 10px;
+margin: 0px;
+position: relative;
+clear: both;
+background-image: none;}
+
+.webform-client-form fieldset.webform-component-fieldset.collapsed{
+border: none;
+padding-bottom: 20px;
+margin-bottom: 25px;
+background-image: none;}
+
+.webform-client-form fieldset.webform-component-fieldset .fieldset-wrapper{
+position: relative;}
+
+.webform-client-form fieldset.webform-component-fieldset legend,
+.webform-client-form fieldset.webform-component-fieldset.collapsible legend {
+margin: 0px 0px 0px -7px;
+width: 647px;
+padding: 0px;}
+
+.webform-client-form fieldset.webform-component-fieldset.collapsed legend{
+margin: 15px 0px 20px -6px;}
+
+.webform-client-form fieldset.webform-component-fieldset legend a,
+.webform-client-form fieldset.webform-component-fieldset.collapsible legend a{
+	width:621px;
+	padding: 6px 0px 6px 25px;
+	font-weight: normal;
+	text-decoration:none;
+	display: block;}
+
+.webform-client-form .webform-component-select .form-item .form-radios .form-item{
+	float: none;}
+
+
+/* Media Faculty Reserve Form */
+.webform #webform-client-form-1562 .webform-component-select .form-item .form-radios .form-item label{
+padding-left: 30px;}
+
+.webform .description {
+padding-top:10px;}
+
+.drupal-tabs ul.ui-tabs-nav{
+height: 21px;}
+
+.drupal-tabs .ui-tabs-panel {
+margin-top: 0px;}
+
+.front #tabs-tabset-1 ul.ui-tabs-nav.secondary {
+height: 21px;}

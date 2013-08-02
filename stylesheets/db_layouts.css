@@ -1,0 +1,116 @@
+/* Research Databases Section */
+
+/* Database Guides pages */
+.dbguide h1.page-title{color: #f9f9f3;background: #0D60A6;}
+.dbguide .export-options {position:absolute;right:5px;top:48px;}
+.dbguide .export-options a.edit-link {margin-top:-70px;}
+.dbguide_central h2.pane-title{display: none;}
+
+/* alpha horizontal lists*/
+#db-alphalist ul{list-style: none;float: left;margin: -10px 0px 0px 0px;padding: 0px 0px 15px 0px; }
+#db-alphalist ul li{display: inline;padding: 0px;margin: 0px;}
+#db-alphalist .db-list-showall a,
+#db-alphalist ul a,
+#db-alphalist ul .noalphalink{display: block;padding: 2px 5px;margin: 4px 4px;float: left;font-size: 1.1em;border: 1px solid #aaa; text-decoration: none;}
+#db-alphalist .db-list-showall a,
+#db-alphalist[id] ul a,
+#db-alphalist[id] ul .noalphalink{border: 1px dotted #898989;}
+#db-alphalist .db-list-showall a{margin-top: -6px;float: left;margin-left: 20px;}
+
+/* Find by subject jump menu on research databases start page */
+#left-db-menu-holder{padding: 0px;margin:0px 0px 0px 0px;border: 1px solid #ddd/*878C80*/;}
+#left-db-menu-holder h2 {margin: 0px;padding: 10px 10px 5px 20px;background:url(http://biblio.csusm.edu/images/bg.gif) repeat-x 0 98% #f3f3f3; 
+font-size: 1.1em;border-bottom: 1px solid #ddd}
+#left-db-menu-holder ul{list-style: none;margin: 0px;padding: 8px 0px 4px 0px;color: #036;font-size: 1em;overflow: auto}
+#left-db-menu-holder li{margin: 0px;padding: 4px 4px 3px 20px;list-style: none;}
+#left-db-menu-holder li a{text-decoration: none;border-bottom: 1px solid #ddd;display: block;padding-left:4px;margin-right:10px;}
+#right-sidebar-holder #block-views-Database_Guides_Lists-block_1 h2{float: left;padding: 3px 10px 0 4px;margin:0;}
+#right-sidebar-holder #block-views-Database_Guides_Lists-block_1 select,
+#db-select-menu select{padding: 4px 8px;border: 1px solid #27537A;font-size: 1.1em;margin-left: 0;color: #036;}
+#right-sidebar-holder #block-views-Database_Guides_Lists-block_1,#db-select-menu{width: 340px;background: url(/images/bg.gif) 0px 100% repeat-x #fff;border: 1px solid #aaa;font-weight: normal;z-index: 100;position: absolute;padding: 7px 6px 0 6px;margin:4px -25px 0 0;top: -65px;right: 20px}
+#right-sidebar-holder #block-views-Database_Guides_Lists-block_1{width:355px;}
+#db-select-menu{padding-top: 12px;}
+#db-select-menu .form-submit{margin:-4px 0 0;*margin-top:-31px;*padding-bottom: 2px;float: right;}
+#right-sidebar-holder #block-views-Database_Guides_Lists-block_1 h3,
+#db-select-menu h2{margin: 0px 0px 5px 0px;font-weight: normal;float: left;font-size:1.1em;padding: 6px 4px 0px 4px;}
+#db-select-menu h2{*margin-top: -4px;padding-top: 2px;}
+#right-sidebar-holder #block-views-Database_Guides_Lists-block_1 select,
+#db-select-menu select{position: relative;float: none;margin: -5px 0px 5px 0px;padding: 3px 0px 1px 7px;border: 1px solid #ccc;background: #FFFFF4; }
+#right-sidebar-holder #block-views-Database_Guides_Lists-block_1 select option,
+#db-select-menu select option{padding: 2px;outline: 0;}
+.dbguide .right-row #db-select-menu{height:31px;margin:-75px -20px 0 0;}
+
+/* Database tables */
+#db-layout{margin: 10px 30px 30px 0px;width: 98%;z-index:2;}
+#db-layout.righty-twothirds-panel .view-content{clear:both;}
+#db-layout #views-exposed-form-Databases-by-Title-page-1{min-height:48px;clear:both;}
+#db-layout .panel-col-left .panel-region-separator{display:none;}
+#db-layout #views-exposed-form-Databases-by-Title-page-1 .views-exposed-widget,
+#db-layout #views-exposed-form-Databases-by-Title-page-1 .views-widget,
+#db-layout #views-exposed-form-Databases-by-Title-page-1 .views-widget .form-item{float:left;margin:0;padding:0;display: inline;}
+#db-layout #views-exposed-form-Databases-by-Title-page-1 .views-widget .form-item input.form-text{margin-top: 0px; padding: 3px 2px; font-size: 1.1em;}
+#db-layout #views-exposed-form-Databases-by-Title-page-1 .views-exposed-widget label{float: left; display: block;font-size: 1.1em;padding: 4px 12px 0 4px;margin:0 4px;}
+#db-layout #views-exposed-form-Databases-by-Title-page-1 .views-exposed-widget .form-submit{padding:4px 8px 2px;float: left;}
+.dbs_startover{height: 30px;text-transform:capitalize;}
+#db-table-layer[id]{height: auto;max-width: 880px;min-height:420px; }
+.dbguide #db-layout{margin:-1px -10px 10px 0;width:100%;}
+#db-layout table{border-top: none;border-collapse: collapse;margin-top:7px;padding:0px;width: 100%;max-width: 980px;}
+#db-layout th{font-weight: bold;color: #464646;font-size: 1.1em;font-family: Arial, Helvetica, sans-serif;text-align: left;padding: 11px 6px 4px 8px;background: url(http://biblio.csusm.edu/sites/all/images/tables/bg_header_color1.jpg) repeat-x 0 100% #5797BB/*9ED7F5 /*0154A2*/;border: 1px solid #ddd;}
+#db-layout th.views-field-title{width:60%}
+#db-layout th.views-field-phpcode{width:12%;}
+#db-layout th.views-field-field-coverage-to-value{width:18%;}
+#db-layout th.views-field-field-scholarly-value{width:10%;}
+#db-layout th a{font-weight: bold;color: #0154A2;text-decoration:none;border-bottom: 1px dotted #aaa;}
+#db-layout th.views-field{border-bottom: none;text-align: left;white-space:nowrap;}
+#db-layout th.views-field a{border-bottom: none;}
+#db-layout .db-desc-toggle{font-weight: normal;display: block;padding: 2px 0px;cursor: pointer;float: right;margin: -22px 3% 1px 4%;border-bottom: 1px solid #ccc;}
+.dbguide #db-layout .db-desc-toggle{float:right;width:auto;margin-top:-5px;*margin-top:-22px;max-width:190px;}
+.dbguide .profile_jobtitle{margin:6px 0px;font-size: 1em;}
+#db-layout .profile_email{margin-bottom: 6px;}
+#db-layout .profile_ofctel{display: block; visibility:visible}
+#db-layout[id]  .db-desc-toggle{border-bottom: 1px dotted #aaa;}
+#db-layout th.align-left{text-align: left; 
+padding-left:18px;}
+#db-layout th.align-left a{float: left;}
+#db-layout tr.odd,
+#db-layout tr.odd-row{background: #fff;border-bottom: 1px dotted #B5B5C4;}
+#db-layout tr.even,
+#db-layout tr.even-row{background: #fafafa;border-bottom: 1px dotted #B5B5C4;}
+#db-layout td.active,
+#db-layout td{background-color: transparent;padding: 3px 6px 1px 9px;}
+#db-layout tr.odd td.active,
+#db-layout tr.odd td{background: #fff;border-bottom: 1px dotted #B5B5C4;}
+#db-layout tr.even td.active,
+#db-layout tr.even td{background: #fafafa;border-bottom: 1px dotted #B5B5C4;}
+#db-layout tr:hover td.active,
+#db-layout tr:hover td{background: #ffffca;}
+#db-layout .selected_desc,
+#db-layout td.selected_cell a{font-weight: bold;}
+#db-layout .db-msg{background:#e55e4c;display: block;clear: both;border-radius:5px;-moz-border-radius:5px;font-size: .9em;padding: 5px;margin: 5px;max-width:400px;color:#fff;}
+#db-layout .trial_access_msg{clear: both;margin-left: 10px;}
+#db-layout .date-display-single{font-size: 1em;border: none;}
+#db-layout .trial_access_msg .date-display-single{display: inline;margin: 0px;padding: 0px;width: auto;float: none;}
+#db-layout .item-title {display: block;padding-top: 6px;margin: 5px 6px 4px 10px;font-size: 1.1em;float: left;text-decoration: none;}
+#db-layout .item-infolink {cursor: pointer;margin: 4px 15px 1px 5px;background:url("/images/icons/info_blue_sm-pub.png") no-repeat scroll left top transparent;border: none;display:block;float:left;font-size:0;font-weight:normal;height:16px;text-indent:-9999px;width:16px;}
+#db-layout .item-desc {display: none;clear:both;padding: 0px 20px;margin:6px 0px 12px 0px;}
+#db-layout td.type-data,
+#db-table-layer td.type-data {padding:5px 9px 4px 9px;text-align: center;}
+#db-layout .fulltext {color: #111;text-decoration: none;cursor: default;}
+#db-layout .fulltext:visited {color: #111;text-decoration: none;}
+#tooltip{position:absolute;border:1px dotted #888;width: 155px;background:#ffd;padding: 9px;color:#333;z-index:1000;display:none;}	
+
+.tipsy {font-size:1em;margin-top:-10px;}
+.dbguide .pane-databases-by-subject .pane-title{margin: 35px 0 0;}
+#most-useful-dbs{margin-top:-20px}
+#right-sidebar-holder #block-views-Database_Guides_Lists-block_1 {height:37px;margin:7px 8px 0 0;}
+.pane-author-pane .imagecache{border: 2px solid #ccc;}
+.pane-author-pane a.lightbox-processed{cursor: default;}
+#db-layout .db-msg p{padding:0 5px;margin:0;}
+.spc-note{clear:both;color: #39480A;font-weight: bold;margin: 0 0 10px 10px;}
+
+/*Database lists*/
+.dbs_startover{margin:0;}
+.flag-favorite .flag-action{background: url(/images/icons/star-white.png) 5px 2px no-repeat transparent; padding: 0 0 0 32px;width:0;overflow:hidden;height:25px;display: block;float:left;margin:3px 0 0 7px;position:relative;}
+.flag-favorite .unflag-action{background: url(/images/icons/star-selected.png) 5px 2px no-repeat transparent; padding: 10px 0 0 32px;display: block;float:left;margin:3px 0 0 7px;text-decoration:none;font-size:.95em;width:0;height:25px;overflow:hidden}
+.flag-message {top:1.1em;padding: 0 5px;}
+

@@ -1,0 +1,51 @@
+.view-display-id-calendar_1 .calendar-calendar .month-view table{	width: 100%;	position: relative;	border-collapse:collapse;	border: none;}
+.view-display-id-calendar_1 .calendar-calendar .month-view th,.view-display-id-calendar_1 .calendar-calendar .month-view td{background-color: #fff;width: 13%;vertical-align: top;}
+.view-display-id-calendar_1 .calendar-calendar .month-view td{border-top: 1px solid #aaa;}
+.view-display-id-calendar_1 .calendar-calendar .month-view td.empty,.view-display-id-calendar_1 .calendar-calendar .month-view td.empty .inner{background: #f3f3f3;}
+.view-display-id-calendar_1 .calendar-calendar ul.links{position:absolute;top:80px;padding:0;margin:0 0 0 10px;list-style:none;left:250px;display:none;}
+.view-display-id-calendar_1 .calendar-calendar div.date-nav {display:inline;border: none;position: relative;color:#333;}
+.view-display-id-calendar_1 .date-nav div.date-heading {float:none;text-align:left;width:auto;}
+.calendar-date-select {position: absolute;z-index:100;text-align: left;right:25px;top:101px;width:176px;}
+#calendar-date-select-form input#edit-submit.form-submit{position: absolute;top: 15px;right: 0px;display: none;top:15px;width:40px;height:auto;font-weight:normal}
+#edit-calendar-goto-wrapper input.form-text{text-align: left;z-index:5;width: 140px;font-family:Arial, Helvetica, sans-serif;margin-bottom:3px;font-size: 1.1em;background: url(/sites/all/images/calendar.png) 98% 50% no-repeat #fff;border:1px solid #bbb;width:110px;padding:7px;}
+.view-display-id-calendar_1 ul.links a,.calendar-calendar div.date-nav .date-prev a,.calendar-calendar div.date-nav .date-next a{text-decoration: none;color: #036;}
+.calendar-calendar div.date-nav .date-prev{position: absolute;width:100px;font-size: 1.1em;left:250px;top:5px;}
+.calendar-calendar div.date-nav .date-next{width:70px;text-align: right;font-size: 1.1em;position: absolute;left:300px;top:5px;}
+.view-display-id-calendar_1 .calendar-calendar .date-heading h3{padding: 0px;font-weight: normal;font-size:1.65em;}
+.view-display-id-calendar_1 .calendar-calendar .month-view .date-heading{padding: 0px;float:none;text-align:left;width:auto;}
+.view-display-id-calendar_1 .attachment{margin-top:15px;}
+.view-display-id-calendar_1 .month-view td div.inner{background-color: #fff;min-height:120px;border: none;}
+.view-display-id-calendar_1 .month-view td.today div.inner{min-height:100px;border: none;}
+.view-display-id-calendar_1 .month-view td div.day {text-align: center;padding: 5px 5px 0px 5px;width:25px;height: 22px;margin: 0px;float: right;position: relative;clear:both;}
+.view-display-id-calendar_1 .month-view div.day a{text-decoration: none;}
+.view-display-id-calendar_1 .month-view td div.inner .view-item-Library_Hours_Calendar{position: relative;padding: 2px 5px;clear: both;}
+.calendar-calendar td div.inner div.calendar .view-data-node-data-field-public-display-field-openingtime-value,.calendar-calendar td div.inner div.calendar .view-data-node-data-field-public-display-field-closingtime-value{ display: inline-block;text-transform:lowercase;}
+.calendar-calendar td div.inner div.calendar .view-data-node-data-field-public-display-field-closingtime-value{ margin-left: 0px;}
+.calendar-more{display:none;}
+.view-display-id-calendar_1 .month-view td .inner div.calendar div  a{background:#fff;color: #330;text-decoration: none;}
+.view-display-id-calendar_1 .month-view td .inner div.calendar .view-data-node-title,.view-display-id-calendar_1 .month-view td .inner div.calendar .view-data-node-title a{color: #716B4F;font-weight: bold;}
+.view-display-id-calendar_1 .month-view td .inner div.calendar div{background:#fff;}
+.view-display-id-calendar_1 .month-view td .inner div.calendar {margin-bottom:2px;padding: 2px 3px 1px 3px;background: #fff;width: 98%;}
+.view-display-id-calendar_1 .month-view td.empty{background: #f7f7f7;}
+.view-display-id-calendar_1 .month-view td .inner div.calendar .view-data-node-data-field-notes-field-notes-value p{margin: 0px;padding: 0px 0px 3px 0px;}
+.view-display-id-calendar_1 .month-view td .inner div.calendar .view-data-node-data-field-notes-field-notes-value a{text-decoration: underline;color:#058;}
+.calendar-calendar tr td.today div.inner:before{font-weight: normal;padding: 10px 0px 0px 10px;color: #D86701;display: inline-block;font-weight: bold;content: "Today"}
+.calendar-calendar span.date-display-single,.view-display-id-calendar_1 .feed-icon{display :none;}
+#calpopup-body .field-type-text,#calpopup-body .content,#calpopup-body .field{width: auto;}#calpopup-body .field-item {color: #444;}
+#calpopup-body #nodelink,#calpopup-body .field-field-date-entry{display: none;}
+.view-display-id-calendar_1 .view-footer{margin-top:15px;}
+#calpopup-body h3{margin: -3px 0px 3px 0px;}
+#calpopup-body .field-label-inline,#calpopup-body .field-label-inline-first{float: left;width:140px;font-weight: bold;}
+#calpopup-body .field-field-description .field-label-inline-first{float: none;width:auto;}
+#calpopup-body  .field-item{width: 100%;float: left;padding: 2px 0px 7px 0px;}
+.day-view{margin-left:250px;}
+.day-view table{border-collapse:inherit;}
+.day-view table th,.day-view table .calendar-dayview-hour,.day-view table .calendar-agenda-hour{display:none;}
+.day-view table td.calendar-agenda-items{font-size: 1.2em;}
+.view-display-id-calendar_1 .calendar-calendar .date-heading h3 {color:#993300;padding-left:50px;}
+.view-display-id-calendar_1 .calendar-calendar .month-view td {border:1px solid #ccc;background: #fff;}
+.view-display-id-calendar_1 .calendar-calendar .links li.calendar{width: auto;border: 1px solid #ccc;background:#f3f3f3;margin: 0 3px 6px;text-align: center;}
+.view-display-id-calendar_1 .month-view .inner .month.day {font-weight:bold;}
+.view-display-id-calendar_1 .links li{list-style: none; float: left;}
+.view-display-id-calendar_1 .links li a{display: block; padding: 4px 8px; margin: 0;}
+.ui-datepicker th {color:#555;}

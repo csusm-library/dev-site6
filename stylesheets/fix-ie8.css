@@ -1,0 +1,24 @@
+fieldset.collapsed fieldset.collapsed legend,
+fieldset.collapsible fieldset.collapsible legend{width: 350px;}
+.webform-client-form fieldset.webform-component-fieldset.collapsed {margin-bottom:35px;}
+.webform-client-form fieldset.webform-component-fieldset legend,
+.webform-client-form fieldset.webform-component-fieldset.collapsible legend {width:647px;}
+	.webform-client-form fieldset.webform-component-fieldset legend a,
+.webform-client-form fieldset.webform-component-fieldset.collapsible legend a{width:auto;}
+.drupal-tabs .ui-tabs-panel {margin-top:0px;}
+.drupal-tabs ul.ui-tabs-nav li.active a{margin-bottom: -9px;}
+.pane-books-search2 #circuit-search .form-text{margin-top:0px;}
+.pane-books-search2 .form-line-item select#searchtype{margin-left:5px;}
+#reserves_limiter input.standard-search-button.form-submit{top:40px;}
+#reserves_limiter .loading{top:70px;}
+.view-id-Urgent_Notices, .panel-dash-left2 #subject-guides,#top-links,#you-are,#get-started,.pane-library-hours-calendar,#initiatives,#spc-collections,#dynamic_spotlights,#help-panel,.panel-dash-left2 #subject-guides h2, .panel-pane .pane-title,#help-panel .content iframe{behavior: url(/scripts/PIE.php)}
+#your-tools-menu ul{margin-left:-246px}
+#about-us-menu{border-right:none;}
+#about-us-menu ul{margin-left:-222px;}
+#media-library .panel-media-left,.panel-media-right{position:relative;z-index:1;}
+#media-library .pane-media-search,#media-library .panel-media-left .block,#media-library .panel-media-right .block,#campus-id-panel,.media-cmid-left .pane-custom.pane-2{background:#fff;position:relative;}
+#media-library .panel-media-left .block h3{position:relative;}
+#beta-feedback{position: absolute;right:20px;top:-35px;}
+
+#media-library #fb-lib-link {margin: 0;position: absolute;right:30px;top:-15px;}
+#media-spotlights-panel,#media-library .panel-media-left .block h3,#media-library .panel-media-left .block,#media-library .panel-media-right .block,#campus-id-panel,.media-cmid-left .pane-custom.pane-2,#media-library .pane-media-search{behavior: url(/scripts/PIE.php)}
