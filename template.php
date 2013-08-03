@@ -66,20 +66,25 @@ function phptemplate_preprocess_page(&$vars) {
   unset($new_css['all']['module']['sites/all/modules/taxonomy_list/taxonomy_list.css']);
   unset($new_css['all']['module']['modules/aggregator/aggregator.css']);
   unset($new_css['all']['module']['modules/system/system-menus.css']);
- // unset($new_css['all']['module']['sites/all/modules/logintoboggan/logintoboggan.css']);
+  unset($new_css['all']['module']['sites/all/modules/logintoboggan/logintoboggan.css']);
   unset($new_css['all']['module']['sites/all/modules/nice_menus/nice_menus_default.css']);
   unset($new_css['all']['module']['sites/all/modules/og/og.css']);
   unset($new_css['all']['module']['sites/all/modules/watchdog/watchdog.css']);
+  unset($new_css['all']['module']['sites/all/modules/ctools/css/ctools.css']);
+  unset($new_css['all']['module']['sites/all/modules/panels/css/panels.css']);
+  unset($new_css['all']['module']['modules/node/node.css']);
+  unset($new_css['all']['module']['modules/system/defaults.css']);
+  unset($new_css['all']['module']['modules/system/system.css']);
+  unset($new_css['all']['module']['modules/user/user.css']);
+  unset($new_css['all']['module']['sites/all/modules/collapsiblock/collapsiblock.css']);
+  unset($new_css['all']['module']['sites/all/modules/nice_menus/nice_menus.css']);
+  unset($new_css['all']['module']['sites/all/modules/upgrade_status/upgrade_assist/upgrade_assist.css']);
+  unset($new_css['all']['module']['sites/all/modules/video_filter/video_filter.css']);
   if ((arg(0) != 'node' && !is_numeric(arg(1)) && arg(2) != 'edit') && (arg(0) != 'node' && arg(1) != 'add') && (arg(0) != 'webfm' && arg(0) != 'webfm#')) {
     unset($new_css['all']['module']['sites/all/modules/webfm/css/webfm.css']);
     unset($new_css['all']['module']['sites/all/modules/webfm/image/icon/panels/css/panels.css']);
   }
-  //unset($new_js['module']['sites/all/modules/jquery_update/replace/jquery.min.js']);
-  $vars['head'] .= '<link '. drupal_attributes(array(
-    'rel' => 'stylesheet',
-    'type' => 'text/css',
-    'href' => '//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css')
-  ) ." />\n";
+  unset($new_js['core']['misc/jquery.js']);
   $vars['head'] .= '<link '. drupal_attributes(array(
     'rel' => 'stylesheet',
     'type' => 'text/css',

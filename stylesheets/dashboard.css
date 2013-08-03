@@ -1,6 +1,3 @@
-body{font: .83em Arial, Verdana, Helvetica, sans-serif;background: #4f4B4b;position: relative;color: #333;text-align:left;margin: 0;padding: 0}
-a:link,a:visited {color: #0A6F87;outline: none;text-decoration: none}
-a:hover{color:#333;text-decoration:underline}
 h1{font-size: 1.75em;font-weight: normal;color: #333;margin:28px 10px 16px 0px; }
 h2{font-size: 1.3em;font-weight: normal;color: #222;margin:22px 10px 12px 0px; }
 h3{font-size: 1.1em;color: #333;margin:16px 0px 6px 0px; }
@@ -10,27 +7,10 @@ li{margin-bottom:8px; }
 img{border:none}
 
 .handheld-only,.access-only{display: none}
-#library-header-wrapper{
-width: 100%; clear: both;margin: 0px;z-index: 10;padding: 0px;height:68px;overflow:hidden;background: url(/images/hdr-bg-1.gif) 0 -16px repeat-x #f2f2f2}
-#site-title-wrapper{
-width: 100%;clear: both;z-index: 100;margin:0px;padding: 0px;
-background: url(/images/sprite1.png) 0 -66px repeat-x #f2f2f2}
-#library-header{
-min-width:975px;height:68px;max-width:1200px;margin: 0px auto; z-index:2}
-#block-nice_menus-7{z-index:1500;position: absolute;margin-left:10px}
-#site-title-inner{min-width:930px;max-width:1200px;color: #686868;height:44px;margin: 0px auto;padding: 0px}
-#site-title{
-height: 95px;padding: 5px 15px 10px 15px;background: url(/images/sprite-main1.png) 0px -84px no-repeat transparent /*#F0EAE8*/;
-margin: -9px 0px -3px 10px;top: 0px;position: absolute;z-index: 2000;width: 138px}
-#site-title a#csusm-link{
-text-decoration: none;font-size: 1em;padding: 0px 5px 5px 5px;text-align: center;margin-top: 16px;position: relative;display: block;width: 130px}
-#site-title .beta-text{display:none;padding:0;background:none;left:-144px;width:0px;overflow:hidden;color:#fff;position:absolute;right:0px;top:-100px;margin:0px}
-#csusm-section{padding: 13px 30px 0px 20px;text-align: right;float :right;color: #f8f8f8;position: relative}
-#csusm-section a{color: #fff /*84A508A*/;font-size: 1.05em;font-weight:bold;text-decoration: none}
 #block-views-Urgent_Notices-block_1{position: absolute;top:-54px;z-index:5;margin-left:500px;background: url(/images/bg.gif) 0 100% repeat-x #fff;
 border-left: 1px solid #bbb;border-right: 1px solid #bbb;border-bottom: 1px solid #bbb;width:310px;height:52px;overflow:hidden;
 -moz-border-radius-bottomleft: 6px;-moz-border-radius-bottomright: 6px;border-radius: 0 0 6px 6px}
-.view-id-Urgent_Notices a{color: #D72B26 !important;text-decoration: none} 
+.view-id-Urgent_Notices a{color: #D72B26 !important;text-decoration: none}
 .view-id-Urgent_Notices .views_slideshow_singleframe_main{
 background: url(/images/icons/warning-png8.png) 0 98% no-repeat transparent;z-index: 15;color: #D72B26;padding:4px 5px 5px 35px;height: 31px}
 .view-id-Urgent_Notices .views-field-field-introduction-value{margin-top:-8px;*margin-top:-16px}
@@ -47,7 +27,7 @@ a:hover#site-title-link,
 a:visited#site-title-link,
 a:active#site-title-link{
 /*background: url(/images/csusm/csusm-logo-index8-2-pub.png) 0% 0% no-repeat transparent #F0EAE8*/;
-font: normal 0em Georgia, "Times New Roman", Times, serif; 
+font: normal 0em Georgia, "Times New Roman", Times, serif;
 position: relative;display: block;text-decoration: none;outline: none;width: 130px;height: 60px;
 margin-left:10px;text-decoration: none;padding:0px 5px 0px 5px;outline: 0;color: #343434}
 a:hover#site-title{color: #525ABE; text-decoration: none}
@@ -60,13 +40,7 @@ a:hover#site-title{color: #525ABE; text-decoration: none}
 
 
 /* Content Area */
-#container{color: #252525;position: relative;z-index: 1;padding:0;background: #f3f3f3}
-#page-content-main{z-index: 1;min-width:910px;max-width:1200px;position: relative;
-/*background: url(/images/fading_backgrounds/fading_background_22.png) 0 10px repeat-x transparent;*/
-min-height: 450px;margin: 0px auto;padding-bottom:10px}
-#page-content-main-inner{
-background: url(/images/fading_backgrounds/gray-fade1-pub.jpg) 0 100% repeat-x #fff;
-padding: 10px 20px;border: 1px solid #efefef /*#E1E1D0*/;z-index: 1;margin: 0px 4px 10px 4px;min-height: 450px}
+
 .front #page-content-main-inner{background: #f6f6f6;padding: 6px 0px 10px 0px;border: 0px}
 .front #page-content-main{background-image: none}
 h1.page-title {
@@ -81,7 +55,7 @@ color:#333;margin:5px 0px 10px 0px;padding:15px 250px 10px 25px;height:24px;z-in
 .drupal-tabs .panel-pane .vote-updown-wrapper{display: none}
 .drupal-tabs .pane-panels-mini h2.pane-title{display: none}
 .field-field-sidebar1-heading,.field-field-sidebar2-heading{font-size:1.1em}
-	
+
 /* Modifications for front page panels */
 .front .panels-flexible-region .inside .pane-content{padding: 0px;border: none}
 
@@ -157,9 +131,9 @@ position:relative;height:38px;margin-top: 19px;background:#f8f8f8;border:1px sol
 #page-content-main-inner ul.pager li.pager-current,
 #page-content-main-inner ul.pager li a{
 color:#666;font-weight:normal;padding:4px 10px}
-#page-content-main-inner ul.pager li{ 
+#page-content-main-inner ul.pager li{
 border-right:1px solid #ccc; }
-#page-content-main-inner ul.pager li.pager-current{ 
+#page-content-main-inner ul.pager li.pager-current{
 font-weight: bold;color: #111;padding: 10px 14px 11px 18px}
 #page-content-main-inner ul.pager li.pager-first a,
 #page-content-main-inner ul.pager li.pager-previous a,
@@ -250,7 +224,7 @@ line-height: normal;margin:8px;padding: 10px 10px 5px 35px;text-transform: none}
 .user-picture{float: left;padding: 2px;border: 1px solid #ccc;margin: 10px 0px 10px 15px}
 .contributed{float: left;width:99%}
 .pane-uprofile-group-work .field-label{font-size:1.1em;font-weight:bold;margin:24px 0 6px}
-	
+
 .panels-flexible-biblio_left1-middle {margin-left:0px}
 #tabs-wrapper ul.tabs.primary {background: none;border: none;margin-top: -50px;margin-right: 10px}
 #autocomplete{background:#fff}
@@ -264,7 +238,7 @@ line-height: normal;margin:8px;padding: 10px 10px 5px 35px;text-transform: none}
 .user-recommended li.views-fluid-grid-item label{font-weight:bold;color:#666}
 .user-recommended li.views-fluid-grid-item a{text-decoration:none !important;display:block;padding: 4px 0}
 .user-recommended div.views-fluid-grid h3 {font-size:1.1em;text-align: left}
-.drupal-tabs .pane-recommend-v1 h2.pane-title {display: block;font-size:1.3em;font-weight: bold} 
+.drupal-tabs .pane-recommend-v1 h2.pane-title {display: block;font-size:1.3em;font-weight: bold}
 .panel-col-right .pane-recommend-v1 .pane-content {padding-top: 0!important}
 .pane-recommend-v1 .item-list li{padding:3px 0;margin:0;list-style:none}
 .pane-recommend-v1 .item-list li a{text-decoration:none}
@@ -327,7 +301,7 @@ table.standard-data td.active{background: #F5FAFA}
 .view-id-Course_Guides td.active,
 .default-table table td:hover, /* for ILLiad tables */
 table.standard-data td.active{background: #D8E8F1}
-.view-Library-Directory table{width: auto;min-width: 550px;margin-right:36px}	
+.view-Library-Directory table{width: auto;min-width: 550px;margin-right:36px}
 .view-Library-Directory td{line-height: 125%}
 .view-Library-Directory td div.website,
 .view-Library-Directory td div.email{padding:8px 0px;text-transform:lowercase}

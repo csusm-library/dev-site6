@@ -1,8 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title><?php print $head_title ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><?php print $head_title ?></title>
 <?php
 global $user;
 $displayedURL = escapeshellcmd($_SERVER['REQUEST_URI']);  //obtain URL and put into variable
@@ -18,8 +18,8 @@ $cssreload = mt_rand(10000, 99999);
 echo "<meta property=\"fb:page_id\" content=\"128015513911336\" />";
 echo "<meta name=\"google-site-verification\" content=\"-3cFwvnQPZVZKjlr7eFa_vf8S_JomcdcseblcyDXMFQ\" />\n";
 echo "<meta name=\"alexaVerifyID\" content=\"I3PM5s8QOgKR3WbT-OS1jwKBjEs\" />\n";
+   echo "<link href=\"/" . $directory . "/stylesheets/frontpage.css?" . time() . "\" rel=\"stylesheet\" media=\"all\" type=\"text/css\" />\n";
 if ($is_front||strstr($body_classes,"front")){
-	 echo "<link href=\"/" . $directory . "/stylesheets/frontpage.css?" . time() . "\" rel=\"stylesheet\" media=\"all\" type=\"text/css\" />\n";
 	 $librarian_image = rand(1,6);
   if ($user->uid){
     if (in_array("webadmins",$user->roles)||$user->uid == "1") {
@@ -61,8 +61,10 @@ echo "<!--[if IE 9]><style type=\"text/css\">.pane-books-search2 .form-line-item
 </style><![endif]-->\n";
 $ip=$_SERVER['REMOTE_ADDR'];?>
 <?php
-echo $scripts . "\n";?>
-
+  echo "<script src=\"//cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>\n";
+  echo $scripts . "\n";
+  echo "<script src=\"//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js\"></script>\n";
+?>
 <!-- Piwik -->
 <script type="text/javascript">
 var _paq = _paq || [];
@@ -97,10 +99,6 @@ if ( $user->uid ) {
   echo "<ul class=\"nice-menu nice-menu-down\">";
   echo "<li id=\"user-name\"><span>Hello, </span>" . $user_details->profile_firstname . "</li><li><a href=\"https://biblio.csusm.edu/people/" . $user->uid . "\">Your Recommendations</a></li><li><a href=\"https://biblio.csusm.edu/people/" . $user->uid . "/my/favorite/databases\">Your Favorites</a></li>";
 		//testing from ic IP -  if ($remote_ip == ("144.37.4.202" || "144.37.176.208")){
-  	include("/var/www/library/s/res.php");
-    echo "<li id=\"eres-stuff\" class=\"pop-up-parent\"><a href=\"/external/course-reserves/course-reserves\">Course Reserves</a><ul class=\"pop-up-menu\">";
-    reserves_lookup($user->name,$user->uid);
-    echo "</ul></li>";
     include("/var/www/d6/sites/libdev2.csusm.edu/themes/csusmlibrary/includes/xerxes-saved-articles.php");
     echo "<li id=\"xerxes-stuff\" class=\"pop-up-parent\"><a href=\"http://library.calstate.edu/sanmarcos/folder/home/" . $user->name . "\">Saved Articles</a>";
     echo savedArticles($user->name);
@@ -111,7 +109,6 @@ if ( $user->uid ) {
 } else {
   echo "<div id=\"sign-in-bubble-wrapper\"><div class=\"corner\"></div><div id=\"sign-in-bubble\">Sign-in for course reserves, access to databases, &amp;  recommendations</div></div>";
 }
-
 if ($breadcrumb && !$is_front):
   if($node->type == "dbguide" || $node->type == "amr" || strstr($displayedURL,"research_portal/databases/az") || (strstr($displayedURL,"/databases") && strstr($body_classes,"sidebar-right"))){
     $dbpath = str_replace("/research_portal/databases/guides/","",$displayedURL);
@@ -184,137 +181,139 @@ endif;
 ?>
 <script language="javascript" type="text/javascript">
   var url = document.location.toString();
-	 var numRand = Math.floor(Math.random()*10000001)
+  var numRand = Math.floor(Math.random()*10000001)
   $(document).ready(function(){
-  $("#appbar_container #chatFrame").attr({
-    src: ""
-  });
-  $("#temecula-site #chatFrame").attr({
-    src: "https://lib.csusm.edu/webdev/chat/"
-  });
-  $("#sidebar-right2 #chatFrame").attr({
-    src: "https://lib.csusm.edu/webdev/chat/"
-  });
-  $("#chat-frame").attr({
-    src: ""
-  });
-  if ($.cookie("appbarchat") == "closed"){
-    $('#appbar #block-block-3').parent().slideToggle('slow');
-  }
-  $('#appbar #block-block-3 .content').prepend('<h2>Need Help?</h2>');
-  $('#appbar #block-block-3 .content').prepend('<div class="expand">open | </div>');
-<?php if (!$is_front && strstr($displayedURL,"fastpath")){ ?>
-    $('#fastpath-connect-chat-form').submit(function() {
-      window.open('', 'framemain', 'width=400,height=400,resizeable,scrollbars');
-      this.target = 'framemain';
+    $('.toboggan-login-link').addClass('btn');
+    $('#toboggan-login').addClass('dropdown-menu');
+    $("#appbar_container #chatFrame").attr({
+      src: ""
     });
-<?php } ?>
-<?php if (strstr($content,"calendar-date-select")){?>
-  $("#calendar-date-select-form input#edit-submit").css('display','block');
-  $("#calendar-date-select-form input#edit-submit").val('Go');
-<?php } ?>
-  $('#appbar .block h3').click(function() {
-    var content = $(this).next('.content');
-    var visible = content.slideToggle('fast').attr('display');
-		var parentdivid = content.parent().attr("id");
-    if (parentdivid == '#block-block-3'){
-      $("#chatFrame").attr({
-        src: "https://lib.csusm.edu/webdev/chat/"
-			});
-      $('#appbar #block-block-3 .content').css('margin-bottom','0px');
+    $("#temecula-site #chatFrame").attr({
+      src: "https://lib.csusm.edu/webdev/chat/"
+    });
+    $("#sidebar-right2 #chatFrame").attr({
+      src: "https://lib.csusm.edu/webdev/chat/"
+    });
+    $("#chat-frame").attr({
+      src: ""
+    });
+    if ($.cookie("appbarchat") == "closed"){
+      $('#appbar #block-block-3').parent().slideToggle('slow');
     }
-		$(this).next('.content').css('margin-bottom','0px')
-		return false;
-  });
-  $('#appbar .block').each(function() {
-    $(this).find('.content').css('left', $(this).css('left'));
-    $(this).find('.content').prepend('<div class="minimize"> close</div>');
-  });
-  $('#appbar .block .minimize').click(function() {
-    $(this).parent().slideDown('slow');
-    $(this).parent().css('width','280px');
-    $(this).parent().css('margin-bottom','-370px');
-    $(this).parent().css('margin-left','-180px');
-    if ($(this).parent().attr("id") == '#block-block-3'){
-      $.cookie("appbarchat", "closed");
-		}
-  });
-	$('#appbar #block-block-3 h2').click(function(){
-    $(this).parent().css('margin-bottom','5px');
-    $(this).parent().css('margin-left','-280px');
-    $(this).parent().css('width','400px');
-				$("#chatFrame").attr({
-					src: "https://lib.csusm.edu/webdev/chat/"
-				});
-			 return false;
-  });
-	$('#appbar .block .expand').click(function(){
-    $(this).parent().css('margin-bottom','5px');
-    $(this).parent().css('margin-left','-280px');
-    $(this).parent().css('width','400px');
-				$("#chatFrame").attr({
-					src: "https://lib.csusm.edu/webdev/chat/"
-				});
-			 return false;
-  });
-  $('select#searchscope').change(function(){
-    if ($(this).val() == 'journals'){
-      $('#search_menu').val('title');
-    }else if ($(this).val() == 'online'){
-      $('#search_menu').val('title');
-    }else{
-      $('#search_menu').val('keyword');
-	  }
-  });
-<?php
-if ($is_front){?>
-  function initMenu() {
-    $('#help-panel .help-title').click(
-    function() {
-    var checkElement = $(this).next();
-    if((checkElement.is('.content')) && (checkElement.is(':visible'))) {
-      checkElement.slideUp(100);
-      $("#help-panel .help-title").css('font-weight','normal');
-      $('#help-panel').removeAttr('style');
-      $('#help-panel #chat-link .help-title').removeAttr('style');
-      $('#help-panel .minimize').remove();
-      $("#help-panel iframe").attr({
-        src: "https://lib.csusm.edu/webdev/chat/"
+    $('#appbar #block-block-3 .content').prepend('<h2>Need Help?</h2>');
+    $('#appbar #block-block-3 .content').prepend('<div class="expand">open | </div>');
+    <?php if (!$is_front && strstr($displayedURL,"fastpath")){ ?>
+      $('#fastpath-connect-chat-form').submit(function() {
+        window.open('', 'framemain', 'width=400,height=400,resizeable,scrollbars');
+        this.target = 'framemain';
       });
-      return false;
-    }
-    if((checkElement.is('.content')) && (!checkElement.is(':visible'))) {
-      $('#help-panel').css('width','438px')
-      if($(this).parent().attr('id') == 'chat-link') {
-        $(this).css('background-image','none');
-        $("#help-panel iframe").attr({
+    <?php } ?>
+    <?php if (strstr($content,"calendar-date-select")){?>
+      $("#calendar-date-select-form input#edit-submit").css('display','block');
+      $("#calendar-date-select-form input#edit-submit").val('Go');
+    <?php } ?>
+    $('#appbar .block h3').click(function() {
+      var content = $(this).next('.content');
+      var visible = content.slideToggle('fast').attr('display');
+  		var parentdivid = content.parent().attr("id");
+      if (parentdivid == '#block-block-3'){
+        $("#chatFrame").attr({
           src: "https://lib.csusm.edu/webdev/chat/"
-        });
+  			});
+        $('#appbar #block-block-3 .content').css('margin-bottom','0px');
       }
-      $('#help-panel .minimize').remove();
-      $(this).append('<span class="minimize"> close</span>');
-      $("#help-panel .help-title").css('font-weight','normal');
-      $('#help-panel .content').slideUp(100);
-      $(this).css('font-weight','bold');
-      checkElement.slideDown(100);
-      return false;
+  		$(this).next('.content').css('margin-bottom','0px')
+  		return false;
+    });
+    $('#appbar .block').each(function() {
+      $(this).find('.content').css('left', $(this).css('left'));
+      $(this).find('.content').prepend('<div class="minimize"> close</div>');
+    });
+    $('#appbar .block .minimize').click(function() {
+      $(this).parent().slideDown('slow');
+      $(this).parent().css('width','280px');
+      $(this).parent().css('margin-bottom','-370px');
+      $(this).parent().css('margin-left','-180px');
+      if ($(this).parent().attr("id") == '#block-block-3'){
+        $.cookie("appbarchat", "closed");
+  		}
+    });
+  	$('#appbar #block-block-3 h2').click(function(){
+      $(this).parent().css('margin-bottom','5px');
+      $(this).parent().css('margin-left','-280px');
+      $(this).parent().css('width','400px');
+  				$("#chatFrame").attr({
+  					src: "https://lib.csusm.edu/webdev/chat/"
+  				});
+  			 return false;
+    });
+  	$('#appbar .block .expand').click(function(){
+      $(this).parent().css('margin-bottom','5px');
+      $(this).parent().css('margin-left','-280px');
+      $(this).parent().css('width','400px');
+  				$("#chatFrame").attr({
+  					src: "https://lib.csusm.edu/webdev/chat/"
+  				});
+  			 return false;
+    });
+    $('select#searchscope').change(function(){
+      if ($(this).val() == 'journals'){
+        $('#search_menu').val('title');
+      }else if ($(this).val() == 'online'){
+        $('#search_menu').val('title');
+      }else{
+        $('#search_menu').val('keyword');
+  	  }
+    });
+    <?php
+    if ($is_front){?>
+      function initMenu() {
+        $('#help-panel .help-title').click(
+        function() {
+        var checkElement = $(this).next();
+        if((checkElement.is('.content')) && (checkElement.is(':visible'))) {
+          checkElement.slideUp(100);
+          $("#help-panel .help-title").css('font-weight','normal');
+          $('#help-panel').removeAttr('style');
+          $('#help-panel #chat-link .help-title').removeAttr('style');
+          $('#help-panel .minimize').remove();
+          $("#help-panel iframe").attr({
+            src: "https://lib.csusm.edu/webdev/chat/"
+          });
+          return false;
+        }
+        if((checkElement.is('.content')) && (!checkElement.is(':visible'))) {
+          $('#help-panel').css('width','438px')
+          if($(this).parent().attr('id') == 'chat-link') {
+            $(this).css('background-image','none');
+            $("#help-panel iframe").attr({
+              src: "https://lib.csusm.edu/webdev/chat/"
+            });
+          }
+          $('#help-panel .minimize').remove();
+          $(this).append('<span class="minimize"> close</span>');
+          $("#help-panel .help-title").css('font-weight','normal');
+          $('#help-panel .content').slideUp(100);
+          $(this).css('font-weight','bold');
+          checkElement.slideDown(100);
+          return false;
+        }
+      }
+      );
+      }
+      initMenu();
+      $(".pane-library-hours-calendar h2.pane-title").append('<span class="hours-icon"></span>');
+    		$("#mini-panel-database_lookup .pane-database-guides-lists h2").attr("style","display:none");
+      $("#ctools-jump-menu #edit-go").attr("style","display:none");
+    		$("#block-block-4 h3").after($("#discov-faq-link"));
+    <?php
     }
-  }
-  );
-  }
-  initMenu();
-  $(".pane-library-hours-calendar h2.pane-title").append('<span class="hours-icon"></span>');
-		$("#mini-panel-database_lookup .pane-database-guides-lists h2").attr("style","display:none");
-  $("#ctools-jump-menu #edit-go").attr("style","display:none");
-		$("#block-block-4 h3").after($("#discov-faq-link"));
-<?php
-}
-if ($is_front||strstr($displayedURL,"temecula")){?>
-  $("#ctools-jump-menu #edit-jump option:first").text("Find Databases by Subject");
-<?php
-}
-?>
-  var viewdbdescs = $.cookie('viewdbdescs');
+    if ($is_front||strstr($displayedURL,"temecula")){?>
+      $("#ctools-jump-menu #edit-jump option:first").text("Find Databases by Subject");
+    <?php
+    }
+    ?>
+    var viewdbdescs = $.cookie('viewdbdescs');
 <?php if (strstr($content,"db-layout")||strstr($content,"recommended-dbs")){?>
   $(".item-infolink").html("info");
   $(".item-infolink").attr({title: "Show database descriptions"});

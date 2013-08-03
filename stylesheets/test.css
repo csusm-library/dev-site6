@@ -1,6 +1,3 @@
-#dev-label{font:1.75em "Courier New", Courier, monospace;position:absolute;top:25px;left:4%;color: #F93;}
-/*site html*/
-a:link,a:visited{color:#0A6F87;outline:0 none;text-decoration:none}
 h2{font-weight:bold;color:#555}
 .ui-widget{font-size:.95em;font-family:Arial,Verdana,Helvetica,sans-serif;}
 .ui-corner-all {border-radius: 0;}
@@ -9,21 +6,15 @@ dt{margin:12px 0 3px}
 dd{margin:0 0 9px}
 
 /* header */
-#library-header-wrapper{width:100%;clear:both;margin:0px;z-index:10;padding:0px;height:71px;overflow:hidden;background:url(/images/spriteme1.png) 0px -36px repeat-x #555}
-#site-title{height:111px;padding:0;margin:0 5px;top:0px;position:absolute;z-index:2000;width:190px;background:transparent;border-left:1px solid #bbb;border-bottom:1px solid #bbb;border-right:1px solid #bbb;box-shadow:0 5px 8px #aaa;-moz-box-shadow:0 5px 8px #aaa;-webkit-box-shadow:0 5px 8px #aaa;border-radius:0 0 5px 5px;-moz-border-radius:0 0 5px 5px;-webkit-border-radius:0 0 5px 5px;text-align:center;background:#fff}
-#site-title a#csusm-link{text-decoration:none;font-size:0px;padding:0 0 0 172px;text-align:center;margin:13px auto 7px;position:relative;display:block;width:0px;overflow:hidden;background:url(/images/csusm/csusm-text3pub.png) 100% 100% no-repeat;height:21px}
-a:link#site-title-link,a:hover#site-title-link,a:visited#site-title-link,a:active#site-title-link{font-family:ronnia-1,ronnia-2,'Shanti',"Trebuchet MS",Arial,Helvetica,sans-serif;position:relative;font-size:2.75em;display:block;text-decoration:none;outline:none;margin:20px auto 0;text-decoration:none;padding:5px;outline:0;color:#595959;z-index:2500;text-align:center}
 #csusm-section a{font-weight:normal}
 
 /* site menu */
-#nice-menu-7 li em{color:#fff;display:block;padding:5px 0 3px;font-weight:normal;font-size:.95em}
 .email-us-link{color: #F72!important;}
 
 /* page content wrappers*/
-#container{padding:9px 0}
 #breadcrumb-holder{border-bottom:1px solid #dedede;margin:-5px -15px 10px;background:#f2f2f2;padding:7px 0 4px;font-size:.85em}
 .breadcrumb{margin-left:25px;padding:0}
-#page-content-main-inner{min-height:550px;border:1px solid #ddd;background:#fff;box-shadow:0 0 6px #ccc;-moz-box-shadow:0 0 6px #ccc;-webkit-box-shadow:0 0 6px #ccc}
+
 .full-node .node,.panels-flexible-213-middle div.panel-pane.pane-node-content div.node{min-height:320px;padding:0 40px 30px 20px}
 .page-comments-wrapper{width:560px;margin:20px 0 20px 25px}
 .panels-flexible-column-biblio1-1{border:1px solid #ccc;-moz-border-radius:7px;border-radius:7px;padding:15px;margin-left:25px;width:225px}
@@ -326,7 +317,7 @@ display:block;font-weight:bold;color:#474747;padding:0px;margin:4px 0px;text-dec
 /*feedback button*/
 #fb-lib-link a{  background-image:url("/images/spriteme1.png");background-position:-10px -441.5px}
 .view-Facebook-Stream .views-field-title{  background-image:url("/images/spriteme1.png");background-position:-5px -502px}
-	
+
 /* Web Forms */
 .node.webform #user-login-form{margin:0;padding:0 20px;height:auto;width:325px;background:url(/images/sprite-main1.png?123456) repeat-x scroll 0 154px white;box-shadow:0 0 7px #ddd;-moz-box-shadow:0 0 7px #ddd;-webkit-box-shadow:0 0 7px #ddd;border: 1px solid #DDD;border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;position: relative;}
 .node.webform #user-login-form .form-item {width: auto;}
