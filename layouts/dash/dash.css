@@ -1,0 +1,11 @@
+.panel-dash { /*  overflow: hidden;  */}
+.panel-dash-inside{}
+.panel-dash-left-wrapper{float:left;width:19%;}
+.panel-dash-central{float:left;width:59%}
+.panel-dash-central-top{}
+.panel-dash-central-middle{}
+.panel-dash-central-mid2{clear:both;}
+.dash-cmid-right{float:left;width:48%;}
+.dash-cmid-left{float:left;width:48%;}
+.panel-dash-central-bot{}
+.panel-dash-right{float:left;width:20%;}
