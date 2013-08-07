@@ -1,5 +1,5 @@
 <div class="row panel-display panel-dash" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
-  <div class="span8 panel-dash-panel panel-dash-central" id="main-content">
+  <div class="span9 panel-dash-panel panel-dash-central" id="main-content">
     <div class="row panel-dash-panel panel-dash-central-top multisearch-tabs">
       <?php
       if (!empty($content['dash_central_top'])) {
@@ -7,19 +7,20 @@
       } ?>
     </div>
     <div class="row panel-dash-panel panel-dash-central-middle">
-      <div class="span4 dash-cmid-right">
+    <div class="span5 dash-cmid-left">
+      <?php
+      if (!empty($content['dash_central_mid_left'])) {
+        echo "<div class=\"inside\">" . $content['dash_central_mid_left'] . "</div>";
+      } ?>
+    </div>
+    <div class="span7 dash-cmid-right">
         <?php
         if (!empty($content['dash_central_mid_right'])) {
           echo "<div class=\"inside\">" . $content['dash_central_mid_right'] . "</div>";
         } ?>
       </div>
     </div>
-    <div class="span4 dash-cmid-left">
-      <?php
-      if (!empty($content['dash_central_mid_left'])) {
-        echo "<div class=\"inside\">" . $content['dash_central_mid_left'] . "</div>";
-      } ?>
-    </div>
+
     <div class="row panel-dash-panel panel-dash-central-mid2">
       <div class="span5">
         <?php
@@ -37,7 +38,7 @@
       </div>
     </div>
   </div> <!-- close panel-dash-central -->
-  <div class="span3 offset1 panel-dash-left-wrapper" id="side-content">
+  <div class="span3 panel-dash-left-wrapper" id="side-content">
     <div class="row panel-dash-panel panel-dash-left">
   		<?php
   		if (!empty($content['dash_left'])) {

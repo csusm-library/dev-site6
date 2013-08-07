@@ -14,4 +14,4 @@
  */
 ?>
 
-<?php print $slideshow; ?>
+<?php print str_replace("biblio", "libdev2", $slideshow); ?>

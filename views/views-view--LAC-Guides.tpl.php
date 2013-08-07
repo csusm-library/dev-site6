@@ -29,12 +29,25 @@
  * @ingroup views_templates
  */
 ?>
-  <?php if ($rows): ?>
-    <div class="view-content">
-      <?php print $rows; ?>
-    </div>
-  <?php elseif ($empty): ?>
-    <div class="view-empty">
-      <?php print $empty; ?>
-    </div>
-  <?php endif; ?>
+
+    <ul id="nice-menu-8" class="nice-menu nice-menu-down sf-js-enabled">
+      <li><span class="menu-label">Find Databases: </span></li>
+      <li><a href="http://biblio.csusm.edu/research_portal/databases">Most Popular</a></li>
+      <li><a href="#">by Subject</a>
+        <span class="submenu">
+        <<?php print $options['type']; ?>>
+        <?php $i=0;
+        foreach ($rows as $id => $row): ?>
+        <li><?php print $row; ?></li>
+        <?php
+        if ($i== 18){
+          echo "</ul><ul>";
+        }
+        $i++;
+        endforeach; ?>
+        </<?php print $options['type']; ?>>
+      </span>
+      </li>
+      <li><a href="http://biblio.csusm.edu/research_portal/databases/az">by Title</a></li>
+      <li id="trial-db-link"><a href="http://biblio.csusm.edu/research_portal/databases#db-layout-right-tab-6">Trial Databases</a></li>
+    </ul>

@@ -29,8 +29,3 @@
       <li><a href="http://biblio.csusm.edu/research_portal/databases/az">by Title</a></li>
       <li id="trial-db-link"><a href="http://biblio.csusm.edu/research_portal/databases#db-layout-right-tab-6">Trial Databases</a></li>
     </ul>
-    <div id="specific-article-link">
-<a href="http://biblio.csusm.edu/research_portal/find/articles/specific">Looking for a Specific Article?</a>
-</div>
-
-

@@ -6,12 +6,12 @@
        <span class="icon-bar">
        <span class="icon-bar">
       </a>
-      <a class="brand" href="/"><img src="/images/librarylogo-1-sm.png"/></a>
+      <a class="brand" href="/"><img src="/images/librarylogo-4-med.png"/></a>
       <div style='position:absolute;color:#fff;left:5px;top:5px;'>[dev]</div>
       <div class="nav-collapse collapse" id="main-menu">
         <ul class="nav pull-left" id="main-menu-left">
           <li id="find-menu" class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Find  <i class="icon-caret-down"></i></a>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Find</a>
             <ul class="dropdown-menu" id="find-dropdown">
               <li><a href="/research_portal/databases">Articles &amp; Databases</a></li></li>
               <li><a href="https://library.csusm.edu/catalog/">Books, Media, &amp; More</a></li></li>
@@ -22,7 +22,7 @@
             </ul>
           </li>
           <li id="help-menu" class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Research Help  <i class="icon-caret-down"></i></a>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Research Help</a>
             <ul class="dropdown-menu" id="help-dropdown">
               <li><a href="/research_portal/ask-a-librarian">Research Assistance</a></li></li>
               <li><a href="https://lib2.csusm.edu/research-guides">Research Guides</a></li></li>
@@ -31,7 +31,7 @@
             </ul>
           </li>
           <li id="services-menu" class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services  <i class="icon-caret-down"></i></a>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services</a>
             <ul class="dropdown-menu" id="services-dropdown">
               <li><a href="https://illiad.csusm.edu/illiad/illiad.dll">Access Your ILL Requests</a></li>
               <li><a href="http://pac.csusm.edu/patroninfo">Renew Borrowed Materials</a></li>
@@ -43,7 +43,7 @@
             </ul>
           </li>
           <li id="about-menu" class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">About  <i class="icon-caret-down"></i></a>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">About</a>
             <ul class="dropdown-menu" id="about-dropdown">
               <li><a href="/about/policies">Policies</a></li>
               <li><a href="/about/people">Directory</a></li>
@@ -63,34 +63,47 @@
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">CSUSM <i class="icon-caret-down"></i></a>
             <ul class="dropdown-menu" id="csusm-dropdown">
               <li><a href="../default/">CSUSM Home Page</a></li>
-              <li class="divider"></li>
               <li><a href="http://my.csusm.edu/">myCSUSM</a></li>
               <li><a href="http://cc.csusm.edu/">Cougar Courses</a></li>
               <li><a href="http://cc.csusm.edu/">Email</a></li>
               <li><a href="http://cc.csusm.edu/">Student Services</a></li>
-              <li><a href="../flatly/">Flatly</a></li>
-              <li><a href="../journal/">Journal</a></li>
-              <li><a href="../readable/">Readable</a></li>
-              <li><a href="../simplex/">Simplex</a></li>
-              <li><a href="../slate/">Slate</a></li>
             </ul>
           </li>
         </ul>
+        <div class="pull-right" id="ask-librarian">
+          <h4 style="font-size:14px;margin:0;line-height:normal;padding:0;color:#fff;">Ask a Librarian</h4>
+          <ul class="nav" id="ask-a-menu">
+            <li>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Chat</a>
+              <ul class="dropdown-menu" id="chat-dropdown">
+                <li><a href="../default/">CSUSM Home Page</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Email</a>
+              <ul class="dropdown-menu" id="email-dropdown">
+                <li><a href="../default/">CSUSM Home Page</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Phone</a>
+              <ul class="dropdown-menu" id="phone-dropdown">
+                <li><a href="../default/">CSUSM Home Page</a></li>
+              </ul>
+            </li>
+          </ul>
       </div>
     </div>
   </div>
 </div>
 <div id="container" class="container">
-  <div id="page-content-main" class="row">
+  <div id="page-content-main" class="row-fluid">
     <div id="page-content-main-inner" class="span12">
       <a name="skip" id="skip"></a>
       <div id="sbox-wrapper" class="span3 offset9">
-        <div id="social-wrapper">
-          <span id="facebook-link">
-            <a href="https://www.facebook.com/csusmlibrary">
-              <span class="access-only">Facebook</span>
+        <?php echo $header; ?>
+        <a href="https://www.facebook.com/csusmlibrary">
+              <i class="icon-facebook-sign" style="color:#44619b;font-size:25px;"></i><span class="access-only">Facebook</span>
             </a>
-          </span>
-        </div>
         <a href="https://microsites.csusm.edu/idea-box/" id="have-an-idea">Have an idea?</a>
       </div>
