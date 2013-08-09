@@ -13,21 +13,21 @@
           <li id="find-menu" class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Find</a>
             <ul class="dropdown-menu" id="find-dropdown">
-              <li><a href="/research_portal/databases">Articles &amp; Databases</a></li></li>
-              <li><a href="https://library.csusm.edu/catalog/">Books, Media, &amp; More</a></li></li>
-              <li><a href="/research_portal/find/articles/specific">Looking for a Specific Article?</a></li></li>
-              <li><a href="/research/find/journals">E-Journals by Title</a></li></li>
-              <li><a href="http://library.csusm.edu/finding/reserves/">Course Reserves</a></li></li>
-              <li><a href="/finding/more">More Search Tools &amp; Resources</a></li></li>
+              <li><a href="/research_portal/databases">Articles &amp; Databases</a></li>
+              <li><a href="https://library.csusm.edu/catalog/">Books, Media, &amp; More</a></li>
+              <li><a href="/research_portal/find/articles/specific">Looking for a Specific Article?</a></li>
+              <li><a href="/research/find/journals">E-Journals by Title</a></li>
+              <li><a href="http://library.csusm.edu/finding/reserves/">Course Reserves</a></li>
+              <li><a href="/finding/more">More Search Tools &amp; Resources</a></li>
             </ul>
           </li>
           <li id="help-menu" class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Research Help</a>
             <ul class="dropdown-menu" id="help-dropdown">
-              <li><a href="/research_portal/ask-a-librarian">Research Assistance</a></li></li>
-              <li><a href="https://lib2.csusm.edu/research-guides">Research Guides</a></li></li>
-              <li><a href="https://lib2.csusm.edu/course-guides">Course Guides</a></li></li>
-              <li><a href="https://lib2.csusm.edu/subject-guide/192-Citation-Help">Citation Style Guides</a></li></li>
+              <li><a href="/research_portal/ask-a-librarian">Research Assistance</a></li>
+              <li><a href="https://lib2.csusm.edu/research-guides">Research Guides</a></li>
+              <li><a href="https://lib2.csusm.edu/course-guides">Course Guides</a></li>
+              <li><a href="https://lib2.csusm.edu/subject-guide/192-Citation-Help">Citation Style Guides</a></li>
             </ul>
           </li>
           <li id="services-menu" class="dropdown">
@@ -92,6 +92,7 @@
               </ul>
             </li>
           </ul>
+        </div>
       </div>
     </div>
   </div>
