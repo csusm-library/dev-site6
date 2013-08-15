@@ -4,10 +4,9 @@
 <br clear="all" />
 </div> <!-- close #container -->
 <br clear="all" />
-<div id="library_footer_wrapper">
-<div id="library_footer">
-<p><a href="/" title="Library home page"><strong>Home</strong></a> | <a href="http://mlib.csusm.edu/?device=mobile" title="CSUSM Library on the go"><strong>Mobile Site</strong></a> | <a href="http://biblio.csusm.edu/sitemap" title="See it all"><strong>Site Map</strong></a> | <a href="http://biblio.csusm.edu/search-this-site" title="Search the Library web site"><strong>Site Search</strong></a> | <a href="https://lib.csusm.edu/" title="For Library staff and faculty"><strong>Intranet</strong></a></p>
-<ul id="library-nav-footer" class="no-bullets inline">
+<div id="library_footer_wrapper" class="container">
+<div id="library_footer" class="row">
+<ul id="library-nav-footer" class="unstyled">
 <li><a href="http://biblio.csusm.edu/research/find"><strong>Find It</strong></a>
 <br /><br />
 <span><a href="http://biblio.csusm.edu/research_portal/databases" class="aad">Articles and Databases</a></span>
@@ -49,11 +48,16 @@
 <li><a href="http://biblio.csusm.edu/external/about-the-library"><strong>About Us</strong></a></li>
 </ul>
 <div class="feedback_info">
-<p style="margin-top:-35px;"><strong>We'd like to hear from you!</strong></p>
-<p><a href="http://biblio.csusm.edu/external/contact-library/email-us" class="email-us-link">Email us</a>
-or call <strong>(760) 750-4348</strong></p>
-<p><strong>California State University San Marcos</strong><br />
-<a href="http://maps.google.com/maps?q=333+s+twin+oaks+valley+rd&oe=utf-8&client=firefox-a&ie=UTF8&hq=&hnear=333+S+Twin+Oaks+Valley+Rd,+San+Marcos,+San+Diego,+California&gl=us&t=h&ll=33.128711,-117.159405&spn=0.025157,0.032187&z=14&iwloc=A&source=embed" class="gmap-link">333 S.Twin Oaks Valley Rd.<br/>San Marcos, CA 92096</a></p></div>
+	  <ul class="nav nav-list">
+	    <li class="nav-header">Contact Us:</li>
+	    <li><a href="http://biblio.csusm.edu/external/contact-library/email-us" class="email-us-link">
+	    	Email us</a>
+	    </li>
+	    <li>(760) 750-4348</li>
+	    <li>California State University San Marcos<br />
+	    	<a href="http://maps.google.com/maps?q=333+s+twin+oaks+valley+rd&oe=utf-8&client=firefox-a&ie=UTF8&hq=&hnear=333+S+Twin+Oaks+Valley+Rd,+San+Marcos,+San+Diego,+California&gl=us&t=h&ll=33.128711,-117.159405&spn=0.025157,0.032187&z=14&iwloc=A&source=embed" class="gmap-link">333 S.Twin Oaks Valley Rd.<br/>San Marcos, CA 92096</a>
+	    </li>
+	  </ul>
 <div id="footer_csu">
 <p><a href="http://www.calstate.edu/AcadSen/Records/Resolutions/2002-2003/2591.shtml">Privacy &amp; Terms of Use</a> &nbsp;|&nbsp; <a href="http://www.csusm.edu/about/safety/index.html">Campus Safety</a> &nbsp;|&nbsp; <a href="http://www.csusm.edu/contact.htm">Contact CSUSM</a></p>
 <p class="csu-link-wrapper"><a href="http://www.calstate.edu/" class="csu-link"></a>

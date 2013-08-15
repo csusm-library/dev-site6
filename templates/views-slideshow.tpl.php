@@ -14,4 +14,4 @@
  */
 ?>
 
-<?php print str_replace("biblio", "libdev2", $slideshow); ?>
+<?php print str_replace("http","https",str_replace("biblio", "libdev2", $slideshow)); ?>

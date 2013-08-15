@@ -23,5 +23,5 @@
 	//$output =  str_replace("sites/biblio.csusm.edu/files/imagecache","sites/lib.csusm.edu/files/imagecache",$output); 
 //$output =  str_replace("biblio.csusm.edu/sites/biblio.csusm.edu/files/imagecache/spotlight_carousel","lib.csusm.edu",$output); 
 list($width, $height, $type, $attr) = getimagesize($output);
-echo "<a href=\"http://biblio.csusm.edu/node/" . $row->nid . "\"><img src=\"" . $output . "\" $attr alt=\"image with link to the " . $row->node_title . " Library Spotlight\" /></a>";
+echo "<a href=\"http://biblio.csusm.edu/node/" . $row->nid . "\"><img src=\"" . $output . "\" $attr alt=\"image with link to the " . $row->node_title . " Library Spotlight\" class=\"img-polaroid\" /></a>";
 ?>

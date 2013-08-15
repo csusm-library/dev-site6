@@ -54,6 +54,9 @@ function phptemplate_preprocess_page(&$vars) {
     $output .= "<ul class=\"tabs secondary\">\n". $secondary ."</ul>\n";
     $vars['tabs2'] = $output;
   }
+  drupal_add_css('sites/all/libraries/bootstrap-select/bootstrap-select.min.css', 'theme', 'all', TRUE);
+  drupal_add_css('sites/all/libraries/yamm/assets/css/yamm.css', 'theme', 'all', TRUE);
+  drupal_add_js('sites/all/libraries/bootstrap-select/bootstrap-select.min.js');
   $new_css = drupal_add_css();
   $new_js = drupal_add_js();
   unset($new_css['all']['module']['sites/all/modules/views/css/views.css']);
@@ -88,7 +91,7 @@ function phptemplate_preprocess_page(&$vars) {
   $vars['head'] .= '<link '. drupal_attributes(array(
     'rel' => 'stylesheet',
     'type' => 'text/css',
-    'href' => '//netdna.bootstrapcdn.com/bootswatch/2.3.2/flatly/bootstrap.min.css')
+    'href' => '//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css')
   ) ." />\n";
   $vars['head'] .= '<link '. drupal_attributes(array(
     'rel' => 'stylesheet',

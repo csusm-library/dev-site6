@@ -1,4 +1,4 @@
-<?
+<?php
 global $user;
 echo "<div id=\"node-" . $node->nid . "\" class=\"node " . $node->type;
 if ($sticky) { echo ' sticky'; } 
@@ -8,7 +8,7 @@ echo "\">\n";
 echo "<div class=\"righty-twothirds-panel\">\n";
 if ($page == 0): ?>
   <h4 class="title"><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h4>
-<? endif;
+<?php endif;
 echo $content;
 
 echo "<br clear=\"all\" />";
@@ -20,4 +20,4 @@ endif;
 echo "<br clear=\"all\" />";
 echo "</div>\n";
 echo "</div>\n";
-?>
+?>test2

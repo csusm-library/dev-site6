@@ -9,20 +9,33 @@
  */
 ?>
 
-
-<ul id="nice-menu-9" class="nice-menu nice-menu-down sf-js-enabled">
-  <li id="find-menu" class="dropdown">
-    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Research Guides</a>
-    <ul class="dropdown-menu" id="find-research-guides">
-    <?php
-    foreach ($rows as $id => $row):
-      echo "<li>" . $row . "</li>";
-      if (strstr($row,"Ethnic")){
-        echo "<li><a href=\"http://lib2.csusm.edu/course-guides/tagged/GE\">General Education</a></li>";
-      }
-
-    endforeach;
-    echo "<ul>";
-  echo "<li>";
-echo "<ul>";
-?>
+<div class="yamm">
+  <ul class="nav nav-stacked">
+    <li id="research-guide-menu" class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Research Guides <b class="caret"></b></a>
+      <ul class="dropdown-menu" id="find-research-guides">
+        <li>
+          <div class="row-fluid">
+            <ul class="span6 unstyled">
+              <?php
+                $i=0;
+                foreach ($rows as $id => $row):
+                  echo "<li>" . $row . "</li>";
+                  if (strstr($row,"Ethnic")){
+                    echo "<li><a href=\"http://lib2.csusm.edu/course-guides/tagged/GE\">General Education</a></li>";
+                  }
+                  if ($i== 13){
+                    echo "</ul><ul class=\"span6 unstyled\">";
+                  }
+                  $i++;
+                endforeach;?>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+    <li>
+      <a href="http://lib2.csusm.edu/course-guides/">Course Guides</a>
+    </li>
+  <ul>
+</div>

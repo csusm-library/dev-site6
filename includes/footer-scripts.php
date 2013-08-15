@@ -2,11 +2,12 @@
   var url = document.location.toString();
   var numRand = Math.floor(Math.random()*10000001)
   $(document).ready(function(){
-    $('.toboggan-login-link').addClass('btn btn-small');
+    $('select').selectpicker();
+    $('.toboggan-login-link').addClass('btn');
+    $('.messages').addClass('alert');
+    $(".alert").alert();
+    $('#block-views-Library_Hours_Calendar-page_2 h3').prepend('<i class="icon-time"></i> ');
     $('#toboggan-login').addClass('dropdown-menu');
-    $("#appbar_container #chatFrame").attr({
-      src: ""
-    });
     $("#temecula-site #chatFrame").attr({
       src: "https://lib.csusm.edu/webdev/chat/"
     });
@@ -16,11 +17,6 @@
     $("#chat-frame").attr({
       src: ""
     });
-    if ($.cookie("appbarchat") == "closed"){
-      $('#appbar #block-block-3').parent().slideToggle('slow');
-    }
-    $('#appbar #block-block-3 .content').prepend('<h2>Need Help?</h2>');
-    $('#appbar #block-block-3 .content').prepend('<div class="expand">open | </div>');
     <?php if (!$is_front && strstr($displayedURL,"fastpath")){ ?>
       $('#fastpath-connect-chat-form').submit(function() {
         window.open('', 'framemain', 'width=400,height=400,resizeable,scrollbars');
@@ -31,50 +27,6 @@
       $("#calendar-date-select-form input#edit-submit").css('display','block');
       $("#calendar-date-select-form input#edit-submit").val('Go');
     <?php } ?>
-    $('#appbar .block h3').click(function() {
-      var content = $(this).next('.content');
-      var visible = content.slideToggle('fast').attr('display');
-      var parentdivid = content.parent().attr("id");
-      if (parentdivid == '#block-block-3'){
-        $("#chatFrame").attr({
-          src: "https://lib.csusm.edu/webdev/chat/"
-        });
-        $('#appbar #block-block-3 .content').css('margin-bottom','0px');
-      }
-      $(this).next('.content').css('margin-bottom','0px')
-      return false;
-    });
-    $('#appbar .block').each(function() {
-      $(this).find('.content').css('left', $(this).css('left'));
-      $(this).find('.content').prepend('<div class="minimize"> close</div>');
-    });
-    $('#appbar .block .minimize').click(function() {
-      $(this).parent().slideDown('slow');
-      $(this).parent().css('width','280px');
-      $(this).parent().css('margin-bottom','-370px');
-      $(this).parent().css('margin-left','-180px');
-      if ($(this).parent().attr("id") == '#block-block-3'){
-        $.cookie("appbarchat", "closed");
-      }
-    });
-    $('#appbar #block-block-3 h2').click(function(){
-      $(this).parent().css('margin-bottom','5px');
-      $(this).parent().css('margin-left','-280px');
-      $(this).parent().css('width','400px');
-          $("#chatFrame").attr({
-            src: "https://lib.csusm.edu/webdev/chat/"
-          });
-         return false;
-    });
-    $('#appbar .block .expand').click(function(){
-      $(this).parent().css('margin-bottom','5px');
-      $(this).parent().css('margin-left','-280px');
-      $(this).parent().css('width','400px');
-          $("#chatFrame").attr({
-            src: "https://lib.csusm.edu/webdev/chat/"
-          });
-         return false;
-    });
     $('select#searchscope').change(function(){
       if ($(this).val() == 'journals'){
         $('#search_menu').val('title');
@@ -86,45 +38,9 @@
     });
     <?php
     if ($is_front){?>
-      function initMenu() {
-        $('#help-panel .help-title').click(
-        function() {
-        var checkElement = $(this).next();
-        if((checkElement.is('.content')) && (checkElement.is(':visible'))) {
-          checkElement.slideUp(100);
-          $("#help-panel .help-title").css('font-weight','normal');
-          $('#help-panel').removeAttr('style');
-          $('#help-panel #chat-link .help-title').removeAttr('style');
-          $('#help-panel .minimize').remove();
-          $("#help-panel iframe").attr({
-            src: "https://lib.csusm.edu/webdev/chat/"
-          });
-          return false;
-        }
-        if((checkElement.is('.content')) && (!checkElement.is(':visible'))) {
-          $('#help-panel').css('width','438px')
-          if($(this).parent().attr('id') == 'chat-link') {
-            $(this).css('background-image','none');
-            $("#help-panel iframe").attr({
-              src: "https://lib.csusm.edu/webdev/chat/"
-            });
-          }
-          $('#help-panel .minimize').remove();
-          $(this).append('<span class="minimize"> close</span>');
-          $("#help-panel .help-title").css('font-weight','normal');
-          $('#help-panel .content').slideUp(100);
-          $(this).css('font-weight','bold');
-          checkElement.slideDown(100);
-          return false;
-        }
-      }
-      );
-      }
-      initMenu();
-      $(".pane-library-hours-calendar h2.pane-title").append('<span class="hours-icon"></span>');
-        $("#mini-panel-database_lookup .pane-database-guides-lists h2").attr("style","display:none");
-      $("#ctools-jump-menu #edit-go").attr("style","display:none");
-        $("#block-block-4 h3").after($("#discov-faq-link"));
+      $("#block-block-5 iframe").attr({
+        src: "https://lib.csusm.edu/webdev/chat/"
+      });
     <?php
     }
     if ($is_front||strstr($displayedURL,"temecula")){?>

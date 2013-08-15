@@ -18,9 +18,8 @@ $cssreload = mt_rand(10000, 99999);
 echo "<meta property=\"fb:page_id\" content=\"128015513911336\" />";
 echo "<meta name=\"google-site-verification\" content=\"-3cFwvnQPZVZKjlr7eFa_vf8S_JomcdcseblcyDXMFQ\" />\n";
 echo "<meta name=\"alexaVerifyID\" content=\"I3PM5s8QOgKR3WbT-OS1jwKBjEs\" />\n";
-   echo "<link href=\"/" . $directory . "/stylesheets/frontpage.css?" . time() . "\" rel=\"stylesheet\" media=\"all\" type=\"text/css\" />\n";
+echo "<link href=\"/" . $directory . "/stylesheets/frontpage.css?" . time() . "\" rel=\"stylesheet\" media=\"all\" type=\"text/css\" />\n";
 if ($is_front||strstr($body_classes,"front")){
-	 $librarian_image = rand(1,6);
   if ($user->uid){
     if (in_array("webadmins",$user->roles)||$user->uid == "1") {
       echo "<link href=\"/sites/all/modules/admin/includes/admin.toolbar.base.css\" rel=\"stylesheet\" media=\"all\" type=\"text/css\" />\n";
@@ -29,7 +28,6 @@ if ($is_front||strstr($body_classes,"front")){
     }
 	}
 	echo "<style type=\"text/css\">";
-  echo "#help-panel{background: url(/images/backgrounds/ask-librarian" . $librarian_image . ".png) no-repeat 97% 52px #fff;}";
   if(strstr($remote_ip,"144.37")){
     echo "#sign-in-bubble-wrapper{display:none;}";
   }
@@ -89,6 +87,13 @@ var _paq = _paq || [];
 echo "</head>\n";
 echo "<body class=\"" . $body_classes . "\">";
 include('/var/www/d6/sites/libdev2.csusm.edu/themes/csusmlibrary/includes/top-menu.php');
+
+if ($help): echo $help . "\n"; endif;
+if ($messages):
+  echo $messages . "\n";
+endif;
+include('/var/www/d6/sites/libdev2.csusm.edu/themes/csusmlibrary/includes/top-menu-closure.php');
+
 if ( $user->uid ) {
   $user_details = user_load(array('uid'=>$user->uid));
 	 profile_load_profile($user_details);
@@ -113,9 +118,7 @@ if ($breadcrumb && !$is_front):
 		  $breadcrumb = $breadcrumb . " &raquo; <a href=\"/research_portal/databases\">Articles &amp; Databases</a>";
 	  }
   $breadcrumb = $breadcrumb . " &raquo; <em>" . $title . "</em>";
-  echo "<div id=\"breadcrumb-holder\"><div class=\"breadcrumb\">\n";
   echo $breadcrumb . "\n";
-  echo "</div></div>\n";
 endif;
 if ($pre_content):
   echo "<div id=\"pre_content\">\n";
@@ -131,10 +134,6 @@ if ($tabs  && !$is_front && $user->uid): echo '<div id="tabs-wrapper">'; endif;
 if ($title  && !$is_front): echo '<h1 class="page-title'. ($tabs ? ' with-tabs' : '') .'">'. t($title) . '</h1>' . (strstr($tabs,'Edit') ? str_replace("biblio","lib",$tabs) : ''); endif;
 if ($tabs  && !$is_front && $user->uid): echo '</div>'; endif;
 if (isset($tabs2)  && !$is_front && $user->uid): echo $tabs2 . "\n"; endif;
-if ($help): echo $help . "\n"; endif;
-if ($messages):
-  echo $messages . "\n";
-endif;
 //$content =  str_replace("//biblio.csusm.edu/sites/biblio.csusm.edu/files/imagecache/spotlight_carousel/sites/lib.csusm.edu/files/spotlights","//lib.csusm.edu/sites/lib.csusm.edu/files/imagecache/spotlight_carousel/spotlights",$content) . "\n";
 //$pattern = '/:(.*)imagecache(.*)sites\/lib.csusm.edu\/files\/(.*)/';
 //$replacement = ':$1imagecache$2$3';
